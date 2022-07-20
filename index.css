@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#F1F4F8 ;
+}
+#top{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    padding: 20px 10px;
+    background-color: #FFF7E2;
+    align-items: center;
+}
+#sub{
+    display: flex;
+    justify-content: space-evenly;
+}
+form{
+    margin-left: 30%;
+}
+#slider{
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+    background-size:10000px;
+}
+#faqMain{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    color: #A8B5C0;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.ccheader>h4{
+    display: flex;
+    font-size: 18px;
+    margin: 8px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #122232;
+}
+.card-wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.card-collapse p{
+    color: #84848B;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.heading a{
+    color: #1CABB5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.pheader{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: #A8B5C0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.pcards{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    padding: 40px 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+.row{
+
+    display: flex;
+    justify-content: space-around;  
+}
+.pcard-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cicon img{
+    width: 60px;
+}
+.cicon+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color:#84848B;
+    font-size: 14px;
+}
+.icicon img{
+    text-align: center;
+    width: 150px;
+}
+
