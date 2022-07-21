@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+    <link rel="stylesheet" href="./select_city.css">
+   <link rel="stylesheet" href="./rental.css">
+<style>
+  textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+</style>
+</head>
+
+<body>
+    <div id="sb_form">
+        <div id="sb_form_btn">
+
+            <div id="rental_btn">
+                <a href="./rental-form.html">
+                    <h3>Rental</h3>
+                    <p>For hours & day</p>
+                </a>
+                <div class="dimond">
+
+                </div>
+            </div>
+
+            <div id="subs_btn">
+                <a href="./subs-form.html">
+                    <h3>Subscription</h3>
+                    <p>For months & years</p>
+                </a>
+            </div>
+        </div>
+        <div id="sb_form_body">
+           <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="">
+            <p>Car Rental in <span id="input_place"> Bengaluru</span></p>
+        </div>
+        <div id="sb_form_input">
+
+            <!-- SELECT YOUR CITY BUTTON -->
+            <div class="select-menu">
+                <div class="select-btn">
+                  
+                    <span class="sBtn-text" style="padding: 20px; font-size: 24px; "> <span style="margin-left:-20px ; font-size:18px;margin-right:10px" class="iconify" data-icon="akar-icons:location"></span>Bengalore</span>
+                    <i class="bx bx-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>Bengaluru</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Chennai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Hyderabad</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Mumbai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Delhi</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Pune</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Kolkata</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- END OF SELECT YOUR CITY BUTTON -->
+            <div id="start_end_time">
+                <h4 id="start">
+                    <input type="datetime-local" name="" id="start_date" value="" max="2022-07-15" required>
+                    Start time
+                </h4>
+                <h4 id="end">
+                    <input type="datetime-local" name="" id="end_date" required>End time
+                </h4>
+            </div>
+        </div>
+
+        <div id="sb_form_submit_btn">
+            <button id="sb_form_data" style="height: 60px;"> Search</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./select_city.js"></script>
+
+<script src="./rental.js">
+   
+</script>

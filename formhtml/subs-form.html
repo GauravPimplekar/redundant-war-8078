@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+    <link rel="stylesheet" href="./select_city.css">
+   <link rel="stylesheet" href="./rental.css">
+
+</head>
+
+<body>
+    <div id="sb_form">
+        <div id="sb_form_btn">
+
+            <div id="subs_btn">
+                <a href="./rental-form.html">
+                    <h3>Rental</h3>
+                    <p>For hours & day</p>
+                </a>
+               
+            </div>
+
+            <div id="rental_btn">
+                <a href="./subs-form.html">
+                    <h3>Subscription</h3>
+                    <p>For months & years</p>
+                    <div class="dimond">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="sb_form_body">
+            <img style="width:230px ;" src="https://www.revv.co.in/assets/subscription/brandLogo/subscription_web.png" alt="">
+            <p>Car Rental in <span id="input_place"> Bengaluru</span></p>
+        </div>
+        <div id="sb_form_input">
+
+            <!-- SELECT YOUR CITY BUTTON -->
+            <div class="select-menu">
+                <div class="select-btn" style="border: 1px solid grey; border-radius:14px; padding: 14px 0px; width: 95%;margin: auto;">
+                    <span class="sBtn-text" style="padding: 20px; font-size: 24px;"><span style="margin-left:-10px ; font-size:18px;margin-right:10px" class="iconify" data-icon="akar-icons:location"></span>Bengaluru</span>
+                    <i class="bx bx-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>Bengaluru</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Chennai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Hyderabad</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Mumbai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Delhi</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Pune</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Kolkata</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- END OF SELECT YOUR CITY BUTTON -->
+            <div id="start_end_time" style="margin-top: 50px; ">
+                <div id="start" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;padding:0px; height: 100px; display: grid;border-radius: 10px ;margin: 10px; border: none;">
+                    <a href="#" style="color:grey">
+                        <h4 style="margin:0 ; padding:10px;border-radius:10px;background-image: linear-gradient(-90deg,#1ca7a3, #1c82aa 
+                        ); color:white;box-shadow: rgba(0, 0, 0,1) 0px 1px 9px;" >Search <br> by the Month </h4>
+                        <i style="position: absolute; font-size:36px;margin-top:-60px; margin-left:180px; color:
+                        white" class="bx bx-chevron-right"></i>
+                        <p style="line-height:1px ; font-size: 16px; text-align: center;">For 1,2,3 & 6 months</p>
+                    </a>
+                   
+                </div>
+                <div id="end" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;padding:0px; height: 100px; display: grid;border-radius: 10px ;margin: 10px; border: none;">
+                    <a href="#" style="color:grey"> 
+                        <h4 style="margin:0 ; padding:10px;border-radius:10px;background-image: linear-gradient(-90deg,#1ca7a3, #1c82aa 
+                        ); color:white; box-shadow: rgba(0, 0, 0,1) 1px 1px 7px;"">Search <br> by the Year </h4>
+                        <i style="position: absolute; font-size:36px;margin-top:-60px; margin-left:180px; color:
+                        white" class="bx bx-chevron-right"></i>
+                        <p style="line-height:1px ; font-size: 16px; text-align: center;">For 1 & 2 years</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="sb_form_submit_btn" style="margin-top: 10px;">
+            <button id="sb_form_data"> Search</button>
+        </div> -->
+    </div>
+
+</body>
+
+</html>
+<script src="./select_city.js"></script>
+
+<script src="./rental.js">
+   
+</script>
