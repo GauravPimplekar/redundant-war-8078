@@ -1,8 +1,273 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* ---------FORM TOP SECTION------------- */
+
+/* *******top section & slide bar started */
+#sb_form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 33%;
+    display: grid;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-top: 20px;
+    background-color: #ffffff;
+
+}
+
+#sb_form_btn {
+    margin-top: 20px;
+    background-color: #49a6ba;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 95%;
+    z-index: 100;
+}
+
+#rental_btn {
+
+    margin: 10px 10px;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 20px;
+    line-height: 1px;
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
+   
+
+}
+#rental_btn a{
+     color: black;
+}
+
+#subs_btn {
+    margin: 7px 10px;
+    text-align: center;
+    line-height: 1px;
+    border-radius: 20px;
+}
+
+#subs_btn a {
+    color: white;
+    font-weight: 600;
+}
+
+
+/*---------- FORM BODY---------- */
+
+#sb_form_body {
+    text-align: center;
+    /* border: 2px solid pink; */
+    margin-top: 18px;
+    font-size: 23px;
+    line-height: 10px;
+    width: 95%;
+}
+
+#sb_form_body img{
+    margin-top: 10px;
+    width: 130px;
+}
+
+/* #sb_form_body #input_place input {
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+#sb_form_input {
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: -20px;
+
+}
+
+#sb_form_input #sb_form_place {
+    border: 1px solid grey;
+    border-bottom: none;
+    width: 100%;
+    text-align: end;
+    border-radius: 10px 10px 0px 0px;
+    padding: 4px 0px;
+}
+
+/* #sb_form_input #sb_form_place #place_list{
+    border: 10px solid black;
+    margin:100px;
+} */
+
+#sb_form_input #start_end_time {
+    display: flex;
+    /* border: 1px solid blue; */
+
+}
+
+#sb_form_input #start_end_time #start,
+#sb_form_input #start_end_time #end {
+    border: 1px solid grey;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 0px 0px 0px 10px;
+    padding-left: 3px;
+    font-size: 20px;
+    color: rgb(93, 93, 93);
+}
+
+#sb_form_input #start_end_time #end {
+    border-radius: 0px 0px 10px 0px;
+}
+
+/* -----------FORM END----------- */
+
+#sb_form_submit_btn {
+    margin: 10px 0px;
+    width: 95%;
+}
+
+#sb_form_submit_btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: #a4d3dc;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#start input {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px;
+    margin-top: -6px;
+    margin-left: 90px;
+}
+
+#end input {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px;
+    margin-top: -6px;
+    margin-left: 90px;
+
+}
+
+  /* dimond shape on rental button */
+.dimond {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-top: -13px;
+    margin-left: 100px;
+    z-index: -1;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px; */
+}
+
+
+input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+
+}
+
+input[type=datetime-local]:focus::-webkit-datetime-edit {
+    color: black !important;
+
+}
+
+
+
+
+.select-menu{
+    width: 460px;
+    /* margin:150px auto ;  */
+    height: 22px;
+    
+ }
+ .select-menu .select-btn{
+     display: flex;
+     height: 30px;
+     padding:10px;
+     font-size:18px;
+     font-weight: 400;
+     border-radius: 10px 10px 0 0;
+     align-items: center;
+     justify-content: space-between;
+     cursor:pointer;
+     /* box-shadow: 0 0 5px rgba(0,0,0,0.1); */
+     border: 1px solid grey;
+     border-bottom: none;
+ }
+ .select-btn i{
+     font-size: 26px;
+     transition: 0.3s;
+ }
+ .select-menu.active .select-btn i{
+     transform: rotate(-180deg);
+ }
+ .select-menu .options{
+     /* position:absolute; */
+     /* padding: 20px; */
+     margin-top: 10px;
+     border-radius: 8px;
+     /* box-shadow: 0 0 3px rgba(0,0,0,0.1); */
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     display: none;
+     /* border: 3px solid red; */
+     margin-top:-240px;
+     margin-left: 490px;
+     width:300px ;
+   
+ }
+ .select-menu.active .options{
+     display: block;
+ }
+ .options .option{
+     display: flex;
+     height: 55px;
+     cursor: pointer;
+     align-items:center;
+     margin-left: -40px;
+     padding:0 16px;
+     border-radius: 8px;
+     background: #fff;
+     /* border: 2px solid red; */
+ 
+ }
+ .options .option:hover{
+     background: #F2F2F2;
+ }
+ .option i {
+     font-size: 25px;
+     margin-right: 12px;
+ }
+ .option .option-text{
+     font-size: 18px;
+     color:#333 ;
+ }
 
 /* *******navbar started********** */
 
@@ -10,10 +275,8 @@
 
 body{
     background-color:#F1F4F8 ;
-    font-family: 'Poppins', sans-serif;
+    
 }
-
-/* *******top section & slide bar started */
 
 #top{
     width: 100%;
@@ -31,6 +294,7 @@ body{
 form{
     margin-left: 30%;
 }
+
 
 /* top section & slide bar Ended */
 
@@ -73,6 +337,35 @@ form{
 
 /* ..............Faq Ended............... */
 
+/* download app started */
+
+.mob {
+    width: 40%;
+    height: fit-content;
+    background-color: #122232;
+    border: 2px solid red;
+    margin-left:610px;
+    margin-top: 20px;
+}
+.card-download-app{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 80px 0px;
+}
+.preview-box .links a{
+    width: 100px;
+}
+.links a img{
+    width: 100px;
+}
+.card-download-app .row{
+    display: flex;
+    justify-content: center;
+}
+
 /* *************our journer & investors Started******************** */
 .pheader{
     width: 80%;
@@ -91,7 +384,7 @@ form{
     border-radius: 10px;
     background-color: white;
 }
-.row{
+ .row{
 
     display: flex;
     justify-content: space-around;  
@@ -118,3 +411,160 @@ p{
 }
 
 /* *************our journer & investors Ended******************** */
+
+/* <!-- specialities cities part started --> */
+
+.pageheader{
+    width: 80%;
+    display: flex;
+    
+}
+.cityh{
+    color: white;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.row-c{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cardbg{
+    width: 80%;
+    margin: auto;
+    background-color: #2A2B36;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.row-c a{
+    display: block;
+    color: #8D8E94;
+    text-decoration: none;
+}
+.row-c li{
+    list-style: none;
+    margin: 15px 0px;
+}
+ .row-c a:hover{
+    color: white;
+}
+/* <!-- specialities cities part ended --> */
+
+/* footer-2/download social app box started */
+#footer-2{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    background-color: white;
+    border-radius: 10px;
+}
+.row-S{
+    display: flex;
+    justify-content: space-around;
+}
+.deskcentre{
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+}
+.links .icon{
+  width: 20px;
+  height: 25px;
+  cursor:default;
+}
+.links .icon:hover{
+    background-color:teal;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+.revvlogo img{
+    width: 96px;
+}
+.otherpages a{
+    text-decoration: none;
+}
+.otherpages a:hover{
+   color: black;
+}
+.otherpages li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.s{
+    font-size: 16px;
+    color: #84848B;
+}
+.s2{
+    font-size: 16px;
+    color: #84848B;
+    margin-bottom: -2px;
+}
+.contactus{
+    margin-top: -28px;
+}
+.downloadalinks{
+    display: flex;
+    flex-direction: column;
+}
+.downloadalinks img{
+    width: 15px;
+}
+.downloadalinks a{
+    border:1px solid rgb(240, 227, 227);
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor:default;
+}
+.downloadalinks a:hover{
+    color: #49A6BA;
+}
+b{
+    color: black;
+    font-weight: bold;
+}
+b:hover{
+    color: #49A6BA;
+}
+  .links li{
+    list-style: none;
+  }
+ 
+
+/* footer-2/download social app box ended */
+
+/* <!-- final section/detailed part started --> */
+
+#detailed{
+    width: 80%;
+    margin: auto;
+}
+.pageheader{
+    display: flex;
+    color: #98A6B3CF;
+    margin-left: 5px;
+}
+.page-content{
+    color: #122232B3;
+    line-height: 20px;
+}
+.pa-list{
+    color: #5D5E6F;
+}
+.pa-list li{
+    margin: 20px 0px;
+}
+.pa-linktext{
+    color: #49A6BA;
+}
+/* <!-- final section/detailed part ended --> */
