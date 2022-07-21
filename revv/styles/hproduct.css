@@ -4,30 +4,32 @@
 #pro_box{
     border: 1px solid red;
     width: 100%;
-    height: 155rem;
+    height: 195rem;
 }
 #top{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     width: 100%;
 }
 
 #left-div{
-    border: 1px solid rgb(255, 208, 0);
+    /* border: 1px solid rgb(255, 208, 0); */
     width: 55%;
     margin-top: 15px;
     height: 28rem;
 }
 #right-div{
-    border: 1px solid rgb(19, 18, 18);
+    border: none;
     width: 35%;
     height: 35rem;
     margin-left: 47rem;
     margin-top: -28rem;
     position: fixed;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #carouselExampleIndicators{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 20rem;
     margin-left: 25px;
     padding: 25px;
@@ -51,30 +53,24 @@
 }
 
 .sub-block{
-    border: 1px solid rgb(31, 28, 9) ;
-    height: 105px;
-    width: 20%;
-    display: inline-block;
-    margin-left: 28px;
+    /* border: 1px solid rgb(31, 28, 9) ; */
+    height: 115px;
+    width: 15%;
+    margin-left: 2px;
 }
-#mid{
-border: 1px solid blue;
-margin-top: 0rem;
-height: 115px;
-}
+
 .m1{
     width: 60px;
     height: 50px;
-    border: 1px solid palevioletred;
+    border: 1px solid #e4e2e2;
     display: inline-block;
     margin-top: 2px;
     margin-left: 3px;
-
-    
-
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 #months{
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     width: 80%;
     height: 55px;
     margin-left: 25px;
@@ -95,12 +91,17 @@ height: 115px;
     font-weight: 500;
     text-align: center;
     
+    
 
 }
 #price{
-    width: 100%;
+    width: 90%;
     height: 75px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
+    margin-top: 5px;
+    margin-left: 21px;
+
+
 }
 
 #title1{
@@ -177,5 +178,216 @@ height: 115px;
     text-decoration: none solid rgb(27, 28,36);
 }
 .d3{
-    margin-left: 18px;
+    
+    color: #D1A619;
+    font-family: Poppins;
+    font-size: 10px;
+    line-height: 15px;
+    vertical-align: baseline;
+    margin: 5px 25px 0px;
+    font-weight: 500;
+    text-align: left;
+
+}
+.d4{
+    margin-left: 11px;
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: 24px;
+    padding: 0px 15px;
+    font-size: 400;
+    text-align: left;
+    text-decoration: none solid rgb(33, 37, 41);
+    
+}
+#call{
+    cursor: pointer;
+    border-radius: 2px ;
+    border: 1px solid #e4e2e2; 
+    width: 90%;
+    height: 50px;
+    /* margin-top: 45px;
+    margin-left: 20px; */
+    font-family: Poppins;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    line-height: 45px;
+    vertical-align: baseline;
+    margin: 14px 19px;
+    font-weight: 800;
+    text-align: center;
+}
+#mid{
+    /* border: 1px solid blue; */
+    height: 30rem;
+    background-color:#f9f9f9 ;
+   
+    }
+#mid-div1{
+    /* border: 1px solid red; */
+    width: 50%;
+    height:40rem;
+    margin-left:76px;
+
+}  
+
+#hcar{
+    margin-top: 25px;
+    color: #1B1C24;
+    font-size: 26px;
+    /* line-height: 31.2px; */
+    /* vertical-align: baseline; */
+    /* margin: 0px 0px 8px 28px; */
+    font-weight: 700;
+}
+ #s11{
+    /* border: 1px solid green; */
+     width: 50%;
+    height: 60px;
+    
+} 
+#s2{
+    /* border: 1px solid green;*/
+    width: 25%; 
+    height: 40px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    /* background-color:#f8ffff; */
+} 
+#s3{
+    /* border: 1px solid green; */
+    width: 25%;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    
+} 
+#mid-div2{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 4rem;
+    width: 100%;
+    gap: 5px;
+    color: #1B1C24;
+    font-size: 16px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    margin: 17px 0px 0px;
+    padding: 20px 0px;
+    font-weight: 400;
+
+} 
+#mid-div3{
+    display: flex;
+    gap: 5px;
+}
+#mid-div4{
+    display: flex;
+    gap: 5px;
+
+}
+#mid-div5{
+    display: flex;
+    gap: 5px;
+
+}
+#mid-div6{
+    display: flex;
+    gap: 5px;
+
+}
+#row11,#row21,#row31,#row41{
+    color: #1B1C24;
+    font-size: 14px;
+    font-family: Poppins;
+    line-height: 21px;
+    vertical-align: baseline;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    /* border: 1px solid yellow; */
+}
+
+#mid22{
+    border: 1px solid black;
+    height: 53rem;
+   
+
+}
+#icon-sec{
+    /* border:1px solid #1c80ab; */
+    width: 50%;
+    height:51rem;
+    margin-left: 75px;
+}
+.iconbox{
+    /* border: 1px solid red; */
+    display: flex;
+    gap:110px;
+    height: 110px;
+}
+#head{
+    color: #1B1C24;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 20px 0px 30px 0px;
+    padding: 0px 15px 0px 0px;
+    
+
+}
+.subt{
+    color: #949599;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 0px 28px;
+    padding: 0px;
+}
+.dash{
+    width: 5%;
+    height: 3px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1caba2;
+}
+#jk{
+    color: #1B1C24;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 0px 22px ;
+    padding: 0px 15px 0px 0px;
+
+}
+.txt5{
+    color: #212529;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ibtn{
+    width: 20%;
+    height: 45px;
+    border: 1px solid #c6c6c7;
+    color: #1CABA2;
+    background-color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+#footer{
+    border: 1px solid green;
+    height: 45rem;
 }
