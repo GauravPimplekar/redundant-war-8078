@@ -1,10 +1,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-#pro_box{
-    border: 1px solid red;
+
+#navbar {
     width: 100%;
-    height: 195rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+
+    /* justify-content: space-evenly; */
+}
+#navbar > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navlogo{
+    /* border: 1px solid green; */
+    margin-left: 120px;
+}
+#brandname{
+    /* border: 1px solid green; */
+    margin-left: -22rem;
+
+}
+/* #one-line{
+    border-left: 1px solid #949599 ;
+    height: 40px;
+    margin-top: 12px;
+   
+    
+} */
+#faq{
+    /* border: 1px solid green; */
+    color: #212529;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+faq:hover{
+   color: none;
+}
+#username{
+    /* border: 1px solid green; */
+
+
+}
+
+
+/* #navbar>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+
+#pro_box{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
 }
 #top{
     /* border: 1px solid brown; */
@@ -16,6 +80,7 @@
     width: 55%;
     margin-top: 15px;
     height: 28rem;
+  
 }
 #right-div{
     border: none;
@@ -24,9 +89,15 @@
     margin-left: 47rem;
     margin-top: -28rem;
     position: fixed;
+   
     border-radius: 6px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+    /* box-shadow:  2px 6px 0 rgba(0,0,0,.1607843137254902) */
 }
+/* .stickey{
+    position: fixed;
+} */
 
 #carouselExampleIndicators{
     /* border: 1px solid blue; */
@@ -34,6 +105,7 @@
     margin-left: 25px;
     padding: 25px;
 }
+
 
 .carousel-inner{
     padding-left: 55px;
@@ -43,7 +115,7 @@
   margin-right: 15px;
   
 }
-.carousel-indicators{
+.carousel-indicators {
     filter: invert(1);
 }
 .carousel-control-next-icon{
@@ -315,7 +387,7 @@
 }
 
 #mid22{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 53rem;
    
 
@@ -387,7 +459,159 @@
     margin-top: 15px;
     
 }
-#footer{
-    border: 1px solid green;
+#footer1{
+    border: 1px solid rgb(249, 250, 249);
+    width: 100%;
     height: 45rem;
+    background-image: linear-gradient(to right, #1c80ab, #1c8aa9, #1c8da8, #1c98a6, #1c9fa4, #1ca2a6, #1ca7a3, #1caba2);
 }
+#subfooter{
+    width: 50%;
+    height: 20rem;
+    /* border: 1px solid green; */
+    margin-left: 77px;
+}
+#head2{
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 20px 0px 30px 0px;
+    padding: 0px 15px 0px 0px;
+
+}
+.txt6{
+    
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+   
+
+}
+#video{
+    width: 50%;
+    height: 20rem;
+    /* border: 1px solid green; */
+    margin-left: 77px;
+    display: flex;
+    margin: 10px;
+}
+#v1{
+    width: 100%;
+    height: 55%;
+
+}
+iframe{
+    
+    border-radius:15px;
+    margin-left: 70px;
+}
+/* footer-2/download social app box started */
+#footer-2{
+    width: 100%;
+    margin: auto;
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    background-color: #f4f4f4;
+    height: 25rem;
+    /* border: 1px solid blue; */
+}
+.row-S{
+    display: flex;
+    justify-content: space-around;
+}
+.pcardbg{
+    /* border: 1px solid red; */
+    margin-top: 55px;
+}
+.deskcentre{
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+}
+.links .icon{
+  width: 20px;
+  height: 25px;
+  cursor:default;
+}
+.links .icon:hover{
+    background-color:teal;
+    padding: 10px;
+    border-radius: 50%;
+}
+.revvlogo img{
+    width: 96px;
+}
+.otherpages a{
+    text-decoration: none;
+    color: #949599;
+    font-size: 16px;
+    font-weight: 500;
+}
+.otherpages a:hover{
+   color: black;
+}
+.otherpages li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.s{
+    font-size: 16px;
+    color: #84848B;
+}
+.content-s{
+    color:#949599;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+}
+a{
+    color: #949599;
+   
+}
+.s2{
+    font-size: 16px;
+    color: #84848B;
+    margin-bottom: -2px;
+}
+.contactus{
+    margin-top: -28px;
+}
+.downloadalinks{
+    display: flex;
+    flex-direction: column;
+    
+}
+.downloadalinks img{
+    width: 15px;
+    
+}
+.downloadalinks a{
+    border:1px solid rgb(240, 227, 227);
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor:default;
+}
+.downloadalinks a:hover{
+    color: #49A6BA;
+}
+b{
+    color: black;
+    font-weight: bold;
+}
+b:hover{
+    color: #49A6BA;
+}
+  .links li{
+    list-style: none;
+  }
+ 
+
+/* footer-2/download social app box ended */
