@@ -1,0 +1,13 @@
+
+        .item_2 {
+            
+            width: 330px;
+            display: inline-block;
+            /* background-color: red; */
+            position: relative;
+            height: 100px;
+            margin: 4px;
+            transition: 0.4s;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            border-radius: 20px;
+        }

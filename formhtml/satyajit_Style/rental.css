@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ---------FORM TOP SECTION------------- */
 #sb_form {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 33%;
+    width: 35%;
     display: grid;
     align-items: center;
-    padding: 30px;
+    padding: 10px 30px;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 46px;
     margin-top: 20px;
     background-color: #ffffff;
+
 
 }
 
@@ -25,6 +29,7 @@
     border-radius: 20px;
     width: 95%;
     z-index: 100;
+    margin: auto;
 }
 
 #rental_btn {
@@ -67,6 +72,7 @@
     font-size: 23px;
     line-height: 10px;
     width: 95%;
+    margin: auto;
 }
 
 #sb_form_body img{
@@ -88,9 +94,10 @@ input:focus, textarea:focus, select:focus{
 }
 #sb_form_input {
     /* border: 1px solid red; */
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px;
     margin-left: -20px;
+    margin: auto;
 
 }
 
@@ -123,6 +130,7 @@ input:focus, textarea:focus, select:focus{
     padding-left: 3px;
     font-size: 20px;
     color: rgb(93, 93, 93);
+  
 }
 
 #sb_form_input #start_end_time #end {
@@ -193,4 +201,49 @@ input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
 input[type=datetime-local]:focus::-webkit-datetime-edit {
     color: black !important;
 
+}
+
+
+/* -------------video section-------- */
+
+#video-area{
+    width: 90%;
+
+    display: flex;
+    padding:10px 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 14px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#video-area #desc{
+   width: 50%;
+   font-weight: 100;
+   line-height: 30px;
+   height: 300px;
+
+}
+#video-area #desc p{
+    color: grey;
+}
+#video-area #desc button{
+    background:none;
+    padding:10px 20px ;
+    color:#49a6ba;
+    font-size:16px ;
+    border: 2px solid #49a6ba ;
+    cursor: pointer;
+
+}
+#video{
+    width: 46%;
+}
+#video iframe{
+    height: 300px;
+    width: 100%;
+    border-radius: 16px;
 }

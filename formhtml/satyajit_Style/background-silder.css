@@ -1,0 +1,16 @@
+#top{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    padding: 20px 10px;
+    background-color: #DDFFEC ;
+    align-items: center;
+}
+#sub{
+    display: flex;
+    justify-content: space-evenly;
+}
+form{
+    margin-left: 30%;
+}
