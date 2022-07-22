@@ -1,0 +1,323 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="log_in.css">
+    <style>
+        #navbar {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            display: flex;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            /* justify-content: space-evenly; */
+        }
+
+        #navbar>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        a {
+
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: black;
+        }
+
+        a:hover {
+            color: teal;
+        }
+
+        #logo {
+            width: 15%;
+            margin-left: 10px;
+        }
+
+        #subscribe {
+            width: 85%;
+        }
+
+        #subscribe>button {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #subscribe>p {
+            cursor: pointer;
+        }
+
+        #authentication {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            margin-left: 10px;
+            border: 0;
+            background-color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btn1:hover {
+            color: teal;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
+        </div>
+
+        <div id="subscribe">
+            <button><a href="sigh_up.html"><span>Hyndai</span>Subscription</a></button>
+            <button><a href=""><span>Mahindra</span>Subscription</a></button>
+            <p>How it works
+            </p>
+            <p>Subscribe vs Buy
+            </p>
+            <p>FAQs</p>
+            <div id="authentication">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="">
+                <div class="container1">
+                    <button type="submit" class="btn1" onclick="openpopup()">Login or Signup</button>
+                    <div class="register-form1" id="register-form1">
+                        <form action="" id="form">
+                            <p>LOG IN</p>
+                            <input type="text" id="login_username" placeholder="Username">
+                            <input type="text" id="login_password" placeholder="Password">
+                            <p id="pass">Send a new password to my email ID</p>
+                            <button onclick="login()" type="button" id="submit">Login</button>
+
+                            <div id="option">
+                                <p>Don't have a account yet?</p><button onclick="Register()" id="signup">Sign
+                                    Up</button>
+                            </div>
+
+
+                            <img src="https://www.revv.co.in/imgs/google-login.png" alt="">
+
+                            <img src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, eaque magni illo quisquam aut sed incidunt
+        consequuntur voluptatibus inventore labore laborum. Aspernatur quos fuga ducimus, id deleniti voluptate optio
+        tempore incidunt a illo. Architecto molestias soluta alias! Tempora mollitia cumque illum pariatur facilis sint
+        ad eos quod harum unde, nemo obcaecati rem? Unde architecto deserunt natus laborum quod laudantium eius nostrum,
+        placeat asperiores ipsam cum. Nam vero temporibus enim voluptate ratione esse aperiam possimus tempora. Quis
+        ullam placeat dolores perspiciatis voluptatum. Excepturi dolorem pariatur omnis facilis, nam, laudantium neque
+        tenetur unde quam expedita iste, blanditiis dignissimos eum repellat ipsum vel debitis adipisci quasi
+        exercitationem iusto enim consequuntur! Nostrum modi quibusdam officiis quia temporibus explicabo dolore est
+        e, magnam iste aspernatur alias est amet vero eligendi sint aliquam
+        officia illo dicta. Perspiciatis vitae debitis dicta, cum soluta quos ratione reprehenderit deleniti, culpa eum
+        ex in facere laborum tempore. Vel illum laboriosam nemo, quia ullam cupiditate officiis commodi quisquam
+        aperiam. Omnis voluptas delectus earum pariatur ipsa nemo cumque deserunt cupiditate ratione sit fuga ea rerum
+        ipsam, dolorem necessitatibus neque quae sunt suscipit doloremque ullam iusto quasi distinctio. Ipsa incidunt,
+        delectus sequi eveniet possimus quod quas aperiam, qui rem voluptatibus quidem dolore, asperiores debitis ad et
+        dolorem deleniti odit? Fugit fugiat, possimus tenetur assumenda consequatur cumque minima quisquam illum aut
+        repellendus quis officia voluptatibus ipsum, error eligendi ab, molestiae at corporis dolor? Suscipit maxime
+        autem accusamus, ad aspernatur odio cum aliquid. Omnis, eius nostrum! Officiis enim aperiam repudiandae esse
+        quod! Blanditiis voluptate facere itaque veniam? Consequatur sunt nulla deserunt voluptatem odit corporis
+        expedita quos dolorum id porro. Deserunt magnam et obcaecati voluptatibus aut aliquam amet molestias, quae
+        eveniet molestiae pariatur accusantium adipisci nulla omnis ullam illum cumque officiis. Nostrum aliquid ad ut,
+        illo tempore dolorum fuga unde obcaecati sit amet explicabo. Aspernatur adipisci officia ex maxime illum dolore
+        id, placeat maiores provident distinctio laborum obcaecati aperiam in. Sequi, id sint repellendus quaerat
+        numquam perferendis distinctio delectus, fuga fugit, non error ipsam temporibus harum nihil veniam quia autem
+        rem similique animi accusamus. Asperiores neque debitis est libero natus necessitatibus reiciendis, quo modi
+        provident explicabo, similique incidunt assumenda, autem eos quibusdam harum sint cumque? Voluptatem neque autem
+        blanditiis culpa, vero, necessitatibus temporibus quisquam a consequatur omnis quia, delectus accusamus debitis
+        odit possimus. Esse fuga consequuntur placeat quod ipsum quos ea, sint explicabo eveniet maiores sed hic ducimus
+        recusandae voluptatibus temporibus nihil sapiente libero error iste sequi quam quidem neque. Consequuntur
+        voluptates modi mollitia optio quasi perspiciatis eum esse fuga rem totam id porro asperiores voluptatum est,
+        vel eos deleniti facere ullam. Neque nisi modi corporis iste doloremque temporibus, inventore facilis tempore
+        expedita quidem, ab ratione harum est repudiandae nulla provident! Autem numquam placeat animi. Similique fugiat
+        voluptatum aliquam reprehenderit doloribus excepturi quia nostrum molestias accusantium repellat pariatur
+        aperiam nisi libero consectetur exercitationem ipsum accusamus ratione quaerat eligendi expedita eveniet dicta
+        deserunt, facere a? Eos, aut vel. Libero iste expedita, recusandae blanditiis labore eius corrupti deleniti
+        quidem maiores hic dolorem autem voluptatem facere, voluptas explicabo consequuntur maxime similique commodi et
+        nobis aliquam magnam. Eveniet optio quidem officia eum. Iste esse, quisquam at ad consequatur officiis molestiae
+        ipsum enim fuga facilis quidem culpa et dolores magnam cum sapiente error est, debitis impedit suscipit
+        architecto sit voluptatibus inventore? Ab animi doloremque eius accusamus quaerat similique quod odio, esse
+        aliquam iste id numquam cum sequi? Pariatur amet dolores inventore corrupti maiores fuga et. Magni atque
+        expedita nobis sequi vel incidunt officia iste. Sint itaque impedit, fugit nam exercitationem iste veritatis
+        illo et officia eaque incidunt maiores suscipit tempore ipsa fuga accusantium, quam repellat vero sequi, iure
+        quod aliquid! Dolore voluptatem repellendus enim, nobis maiores repellat eligendi numquam. Voluptatum blanditiis
+        dolores fugit mollitia corrupti ducimus fuga fugiat distinctio quis consequuntur optio ratione, eius animi
+        aliquid magni doloremque? Aperiam enim quasi voluptatibus voluptate adipisci et modi illo quae architecto
+        temporibus pariatur delectus consequuntur expedita molestias odio placeat facilis, non recusandae ipsum ullam.
+        Maiores magnam voluptatum, voluptatem incidunt eum eligendi non earum aspernatur dignissimos consequatur
+        corporis quasi sunt fugiat ducimus quisquam asperiores in illo consectetur laboriosam odio quod itaque quia?
+        Molestias voluptatum ipsum officiis laboriosam facilis. Unde officiis cupiditate doloribus doloremque adipisci
+        quisquam, aspernatur nulla fugit neque tenetur labore, accusantium harum error. Vitae, quidem earum repudiandae,
+        vero odit esse doloribus nostrum cupiditate quasi eaque provident, eligendi maxime praesentium. Necessitatibus
+        soluta in ipsa voluptas distinctio veniam non delectus sapiente qui eligendi consectetur deleniti culpa eaque
+        impedit, modi vitae nam, obcaecati aliquid consequatur. Sint, aut dignissimos voluptatem ducimus, nesciunt,
+        aspernatur illum laudantium debitis repellat delectus aliquid iure odit rem odio. Fugit in saepe harum vitae
+        provident perferendis esse ducimus necessitatibus exercitationem repellat, a maxime. Magni commodi nulla, eaque
+        iste ad doloribus facilis libero, ex magnam debitis sunt non adipisci sit sed dolore nostrum, dolores incidunt
+        porro asperiores pariatur quasi. Dolore veritatis amet repudiandae maiores error magnam dolorem excepturi
+        assumenda quod porro. Laboriosam iste itaque voluptas maiores voluptatibus illum tempora in maxime assumenda
+        nulla vel ullam tempore nemo, consequuntur quas omnis? Quod repellat aspernatur animi voluptatem sequi ad, eum
+        error sunt enim dolore, culpa, dolor perspiciatis debitis! Enim eius, ratione optio nihil nemo, aspernatur vero
+        illo excepturi consequuntur velit necessitatibus, adipisci fugit beatae? Alias deleniti ab repudiandae possimus
+        vero voluptate dolorum! Explicabo tenetur optio id magnam odio nam quae numquam modi? Iusto animi autem et
+        blanditiis esse non expedita voluptas beatae fugit quibusdam odio assumenda vitae ipsam voluptatum dolor id
+        ipsum, excepturi maiores provident tempore quasi facere commodi? Asperiores doloribus, laudantium error cumque
+        unde iusto odit et quod iure a laborum odio voluptatem, corrupti voluptatum modi placeat id esse in veniam ullam
+        vel repudiandae. Tempore rerum dolores laboriosam ducimus doloremque. Repellat, eum qui. Aperiam dolorum
+        sapiente quam nulla ipsa enim eum atque nobis maxime saepe eius tenetur, earum tempora placeat ratione itaque
+        deleniti, reiciendis molestias. Excepturi officia eaque hic veritatis placeat sint provident, repellendus
+        consectetur, eius, facere porro nihil tempora adipisci doloremque qui illum. Ipsa error quia voluptatem aliquam
+        est cumque repellendus quas dolorem facilis explicabo, quae, neque odit molestiae nobis illo ullam in.
+        Laudantium excepturi atque tenetur iusto quas, obcaecati qui deserunt illum. Culpa illo deserunt voluptatibus
+        eos quia in dolorum nisi recusandae harum eius ea sapiente maxime, iusto, necessitatibus assumenda odio sint
+        pariatur corrupti? Doloremque quisquam nostrum obcaecati mollitia consequuntur optio sint numquam laboriosam,
+        .</p>
+</body>
+
+</html>
+
+
+<script>
+    let popup = document.querySelector("#register-form1")
+    let popup1 = document.querySelector('#register-form')
+    function openpopup() {
+        popup.classList.add("openpopup")
+    }
+    function openpopup1() {
+        popup1.classList.add("openpopup")
+    }
+
+    async function login() {
+        let login_data = {
+            password: document.getElementById("login_password").value,
+            username: document.getElementById("login_username").value,
+        }
+        console.log(login_data)
+
+        login_data = JSON.stringify(login_data)
+
+        let login_link = 'https://masai-api-mocker.herokuapp.com/auth/login'
+
+        let response = await fetch(login_link, {
+            method: "POST",
+
+            body: login_data,
+
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        let data = await response.json()
+        console.log(data)
+
+
+    }
+
+
+    async function Register() {
+
+        let p = document.createElement("p")
+        p.innerText = "SIGN UP"
+        p.style.marginBottom = 20
+        let name = document.createElement("input")
+        let mobile = document.createElement("input")
+        let description = document.createElement("input")
+        let password = document.createElement("input")
+        password.setAttribute('id', 'password')
+        password.placeholder = "Password"
+        let username = document.createElement("input")
+        username.setAttribute('id', 'username')
+        username.placeholder = 'Username'
+        let email = document.createElement("input")
+        email.setAttribute('id', 'email')
+        email.placeholder = "Email ID"
+        let img1 = document.createElement("img")
+        img1.src = 'https://www.revv.co.in/imgs/google-login.png'
+        let img2 = document.createElement("img")
+        img2.src = 'https://www.revv.co.in/imgs/facebook-icon.png'
+        let button = document.createElement("button")
+        button.innerText = "Proceed"
+        button.setAttribute("id", "submit")
+        button.addEventListener("click", signup)
+        let form = document.createElement("form")
+        form.append(p, img1, img2, email, username, password, button)
+
+
+        document.querySelector("#register-form1").innerHTML = ""
+        document.querySelector("#register-form1").append(form, button)
+        // 
+        // // window.location.reload()
+    }
+
+    async function signup() {
+        popup.classList.remove("openpopup")
+
+        let signup_data = {
+            name: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            username: document.getElementById('username').value,
+            mobile: document.getElementById('username').value,
+            description: document.getElementById('username').value
+        }
+        signup_data = JSON.stringify(signup_data)
+
+        let signup_api_link = 'https://masai-api-mocker.herokuapp.com/auth/register'
+
+
+        let response = await fetch(signup_api_link, {
+            method: "POST",
+
+            body: signup_data,
+
+            headers:
+            {
+                'Content-Type': 'application/json'
+            }
+        })
+
+
+        let data = await response.json()
+        console.log(data)
+
+    }
+
+</script>

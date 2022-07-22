@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .btn{
+    padding: 10px 60px;
+    background-color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+} */
+.register-form1{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.register-form{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 550%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    /* visibility: hidden; */
+    transition: transform 0.4s, top 0.4s;
+}
+.openpopup{
+    visibility: visible;
+    top: 500%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.register-form1{
+    border: 1px solid;
+}
+.register-form1 > form > img{
+    width: 180px;
+    margin-bottom: 15px;
+}
+form > input{
+    width: 100%;
+    margin-top: 30px;
+    border: 0;
+    border-bottom: 1px solid teal;
+}
+h4{
+    padding: 10px;
+}
+#submit{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    width: 130px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+form > p{
+    margin-top: 20px;
+}
+#pass{
+    color: teal;
+    font-size: small;
+}
+#option{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#option > p{
+    font-size: small;
+}
+#option > button{
+    border: 0;
+    color: teal;
+    background-color: white;
+}
