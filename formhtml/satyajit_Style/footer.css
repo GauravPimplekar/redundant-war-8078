@@ -1,0 +1,175 @@
+/* ****our journer & investors Started******* */
+.pheader{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: #A8B5C0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+.pcards{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    padding: 40px 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+ .row{
+
+    display: flex;
+    justify-content: space-around;  
+}
+.pcard-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cicon img{
+    width: 60px;
+}
+.cicon+h3{
+    font-size: 22px;
+    margin-top: 10px;
+}
+p{
+    color:#84848B;
+    font-size: 14px;
+}
+.icicon img{
+    text-align: center;
+    width: 150px;
+}
+
+/* ****our journer & investors Ended******* */
+
+/* <!-- specialities cities part started --> */
+
+.pageheader{
+    width: 80%;
+    display: flex;
+    
+}
+.cityh{
+    color: white;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.row-c{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.cardbg{
+    width: 80%;
+    margin: auto;
+    background-color: #2A2B36;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.row-c a{
+    display: block;
+    color: #8D8E94;
+    text-decoration: none;
+}
+.row-c li{
+    list-style: none;
+    margin: 15px 0px;
+}
+ .row-c a:hover{
+    color: white;
+}
+/* <!-- specialities cities part ended --> */
+
+/* footer-2/download social app box started */
+#footer-2{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    background-color: white;
+    border-radius: 10px;
+}
+.row-S{
+    display: flex;
+    justify-content: space-around;
+}
+.deskcentre{
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+}
+.links .icon{
+  width: 20px;
+  height: 25px;
+  cursor:default;
+}
+.links .icon:hover{
+    background-color:teal;
+    padding: 10px;
+    border-radius: 50%;
+}
+.revvlogo img{
+    width: 96px;
+}
+.otherpages a{
+    text-decoration: none;
+}
+.otherpages a:hover{
+   color: black;
+}
+.otherpages li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.s{
+    font-size: 16px;
+    color: #84848B;
+}
+.s2{
+    font-size: 16px;
+    color: #84848B;
+    margin-bottom: -2px;
+}
+.contactus{
+    margin-top: -28px;
+}
+.downloadalinks{
+    display: flex;
+    flex-direction: column;
+}
+.downloadalinks img{
+    width: 15px;
+}
+.downloadalinks a{
+    border:1px solid rgb(240, 227, 227);
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor:default;
+}
+.downloadalinks a:hover{
+    color: #49A6BA;
+}
+b{
+    color: black;
+    font-weight: bold;
+}
+b:hover{
+    color: #49A6BA;
+}
+  .links li{
+    list-style: none;
+  }
+ 
+
+/* footer-2/download social app box ended */

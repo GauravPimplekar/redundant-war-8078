@@ -1,0 +1,37 @@
+/* *****Faq started****** */
+#faqMain{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    color: #A8B5C0;
+    margin-bottom: 30px;
+
+}
+.ccheader>h4{
+    display: flex;
+    font-size: 18px;
+    margin: 8px 0px;
+    color: #122232;
+}
+.card-wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.card-collapse p{
+    color: #84848B;
+    font-size: 14px;
+}
+.heading a{
+    color: #1CABB5;
+    font-size: 16px;
+}
+
+/* ..............Faq Ended............... */

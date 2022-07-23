@@ -1,0 +1,89 @@
+#car_colection {
+   
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 14px;
+    margin-top:40px; 
+}
+#car_colection h3{
+    font-size: 23px;
+}
+
+#car_type {
+    display: flex;
+    gap:40px;
+}
+#car_type button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background: none;
+    border:none;
+    font-weight: 600;
+    border-bottom: 4px solid skyblue;
+    margin-bottom: 20px;
+    line-height: 1px;
+}
+#car_display {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    
+}
+#car_display div:last-child{
+    width: 110px;
+    height: 280px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 2px solid blue; */
+    border-radius: 6px;
+    cursor: pointer;
+}
+#car_display div:last-child:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#car_display .cart {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    line-height: 1px;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    border-radius:6px ;
+    height: 260px;
+    cursor: pointer;
+
+
+}
+#car_display .cart:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#car_display .cart h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#car_display .cart h6 {
+    font-size: 16px;
+    color: black;
+}
+
+#car_display .cart img:first-child {
+    width: 180px;
+    height: 100px;
+    margin-left: -10px;
+}
+
+#car_display .cart div img,
+#car_display .cart div .p {
+    width: 20px;
+    height: 20px
+}
+
+#car_display .cart div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14px;
+}

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/74f19205b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+     
+        #pre_checout {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            height: 550px;
+            padding: 10px;
+            
+        }
+
+        #pre_checout #car_details {
+          
+            display: grid;
+            justify-content: start;
+            align-items: center;
+            text-align: strat;
+            height: 460px;
+            margin: auto;
+            margin-top: 5px;
+            
+        }
+
+        #pre_checout #car_details #prtrol_manual {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            height: 4px;
+            line-height: 10px;
+            margin-top: -60px;
+        }
+
+        #pre_checout #cart_desc {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 50%;
+            padding: 0px 30px;
+            border-radius: 8px;
+         
+           
+        }
+
+        #pre_checout #cart_desc #monthly_fee,
+        #pre_checout #cart_desc #insurance,
+        #pre_checout #cart_desc #total_fee,
+        #processing,
+        #refund,
+        #booking {
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+        }
+
+        #pre_checout hr {
+            margin-top: 40px;
+        }
+
+        #pre-checkout-btn {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 20px;
+        }
+
+        #pre-checkout-btn button {
+            padding: 14px 50px;
+            border-radius: 6px;
+            border: none;
+            font-size: 20px;
+            background: none;
+            margin-top: 10px;
+        }
+
+        #pre-checkout-btn button:first-child {
+            color: skyblue;
+            font-weight: 700;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            cursor: pointer;
+        }
+
+        #pre-checkout-btn button:last-child {
+            color: white;
+            font-weight: 700;
+            background-image: linear-gradient(-90deg, #1ca7a3, #1c82aa);
+            cursor: pointer;
+
+        }
+
+
+
+/* ------------------FAQ CSS ---------------*/
+#faq_sec{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    right: 74px;
+    margin-top: 20px;
+    padding:30px;
+    border-radius: 14px;
+}
+
+
+
+.accordion{
+   
+    width: 600px;
+}
+
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 30px  0 10px ;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px 40px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+.accordion .contentBx .content{
+   position: relative;
+   padding: 0px;
+   color: grey;
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s;
+   /* overflow-y: auto; */
+   font-size: 13px;
+
+}
+.accordion .contentBx.active .content{
+    height: 106px;
+    padding: 10px;
+    }
+
+
+    /* pop up css */
+
+    /* #container{
+            width: 100%;
+            height: 100vh;
+            background: #3c5077;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .btn{
+            padding: 10px 60px;
+            background: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+        .popup{
+            width: 400px;
+            background: white;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,-50%)scale(0.1);
+            text-align: center;
+            padding: 0 30px 30px;
+            color: #333;
+            visibility: hidden;
+            transition: transform 1s,top 1s;
+        }
+
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%)scale(1);
+        }
+        .popup img{
+            width: 120px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+        }
+        .popup h2{
+            font-size: 38px;
+            font-weight: bold;
+            margin: 30px 0 10px;
+        }
+        .popup button{
+            width: 100%;
+            margin-top: 50px;
+            padding: 10px 0;
+            background: #6fd649;
+            color: white;
+            border: 0;
+            outline: none;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        }
+        
+            /* position: fixed; */
+           /* position: absolute; */
+      
+      
+      
+      
+           /* **navbar started*** */
+
+#navbar {
+    width: 100%;
+    margin: auto;
+    margin-top: -6px;
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    z-index: 97;
+}
+
+#navbar>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 140px;
+
+}
+
+#subscribe a {
+
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+a:hover {
+    color: teal;
+}
+
+#logo {
+    width: 15%;
+    margin-left: 10px;
+}
+
+#subscribe {
+    width: 85%;
+}
+
+#subscribe>button {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#subscribe>p {
+    cursor: pointer;
+}
+
+#authentication {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn1 {
+    margin-left: 10px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn1:hover {
+    color: teal;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* login&signup */
+
+.register-form1{
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding:  30px 0px;
+    padding-right: 140px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 98;
+}
+.register-form{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 550%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    /* padding: 0 30px 30px; */
+    color: #333;
+    /* visibility: hidden; */
+    transition: transform 0.4s, top 0.4s;
+}
+.openpopup{
+    visibility: visible;
+    top: 500%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.register-form1{
+    border: 1px solid;
+}
+.register-form1 > form > img{
+    width: 180px;
+    margin-bottom: 15px;
+}
+form > input{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    border: 0;
+    border-bottom: 1px solid teal;
+}
+h4{
+    padding: 10px;
+}
+#submit{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    width: 130px;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+#submit1{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    width: 130px;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* margin-left: 130px; */
+}
+form > p{
+    margin-top: 20px;
+}
+#pass{
+    color: teal;
+    font-size: small;
+}
+#option{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#option > p{
+    font-size: small;
+}
+#option > button{
+    border: 0;
+    color: teal;
+    background-color: white;
+}
+/* login&signup */
+
+/* ........navbar ended............. */
+        
+    </style>
+</head>
+
+<body>
+    <!--  --------------------navbar start from here -------------->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
+        </div>
+
+        <div id="subscribe">
+            <button><a href="hyundai.html"><span>Hyndai</span>Subscription</a></button>
+            <button><a href="mahindra.html"><span>Mahindra</span>Subscription</a></button>
+            <p>FAQs</p>
+            <div id="authentication">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="">
+                <div class="container1">
+                    <button type="submit" class="btn1" onclick="openpopup()">Login or Signup</button>
+                    <div class="register-form1" id="register-form1">
+                        <form action="" id="form">
+                            <p>LOG IN</p>
+                            <input type="text" id="login_username" placeholder="Username">
+                            <input type="text" id="login_password" placeholder="Password">
+                            <p id="pass">Send a new password to my email ID</p>
+                            <button onclick="login()" type="button" id="submit1">Login</button>
+
+                            <div id="option">
+                                <p>Don't have a account yet?</p><button onclick="Register()" id="signup">Sign
+                                    Up</button>
+                            </div>
+
+
+                            <img src="https://www.revv.co.in/imgs/google-login.png" alt="">
+
+                            <img src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--------------------- nav bar end here---------------- -->
+    <div id="pre_checout">
+        <div id="car_details" class="sticky">
+            <h1>MAruti Alto K10</h1>
+            <div id="prtrol_manual" style="color: grey;">
+                <img class="p" src="https://www.revv.co.in/grapheneImages/CompareNPay/petrol.svg" alt="">
+                <p>Petrol</p>
+                <img src="https://www.revv.co.in/grapheneImages/CompareNPay/manual-icon.svg" alt="">
+                <p>Manual</p>
+            </div>
+            <p style="margin-top:-48px; color: grey;"><i class="fa-solid fa-location-dot"></i> Bangalore</p>
+            <img id="alto_car" style="width: 400px;height:180px; margin-top:-26px; margin-left:-40px ;"
+                src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Maruti_suzuki_alto_k10.jpg"
+                alt="">
+            <p style="color: grey;margin-top: -20px; font-size: 11px; text-align: start;">This image is for
+                representational purpose only. Actual colour may change.</p>
+        </div>
+        <div id="cart_desc" class="sticky">
+            <a href="">
+                <p style="font-size:22px; color: skyblue;">Apply Promo Code</p>
+            </a>
+            <p style="color:grey; font-size: 24px;">Subscription tenure: <span style="color:black;">24 Months</span>
+            </p>
+            <div id="monthly_fee">
+                <p style="font-size:20px;">Monthly fee <span style="font-size: 13px;">(Inclusive of taxes)</span></p>
+                <h3>₹ 13,399/mo</h3>
+            </div>
+            <div id="insurance">
+                <p style="font-size:20px;">
+                    Insurance and maintenance fee <a href="" style="font-size: 13px;">Details</a>
+                </p>
+
+                <h3> ₹ 4,000/mo</h3>
+            </div>
+            <hr>
+
+            <div id="total_fee">
+                <h3>Total monthly fee
+                </h3>
+                <h3> ₹ 17,399/mo</h3>
+            </div>
+            <div id="processing">
+                <p style="font-size:20px;">Processing Fee <span style="font-size: 13px;">(One time)</span>
+                </p>
+                <p style="font-size:20px;">₹ 1,000</p>
+            </div>
+            <div id="refund">
+                <p style="font-size:20px;">Refundable deposite <span style="font-size: 13px;">(One time)</span>
+                </p>
+                <p style="font-size:20px;">₹ 10,000</p>
+            </div>
+            <hr>
+            <div id="booking">
+                <h3>Booking amount
+                </h3>
+                <h3> ₹ 28,399</h3>
+            </div>
+            <hr>
+            <div id="pre-checkout-btn">
+                <button>Want to know more</button>
+                <button class="btn" onclick="openPopup()">Reserve this car</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------FAQ SECTION --------->
+    <div id="faq_sec">
+        <h3>Frequently asked questions</h3>
+         <div class="accordion">
+        <div class="contentBx">
+            <div class="label">How will the payment cycle work?</div>
+                <div class="content">
+                    <p>Payment cycle will be on monthly advance basis. The billing cycle will begin on the mutually agreed date of delivery, and you will need to pay the booking amount (first month subscription fee plus refundable deposit) before handover of the car. This date will also become the due date for subsequent months. Every month, you will receive an invoice that needs to be paid by the due date.</p>
+                </div>
+            
+        </div>
+        <div class="contentBx">
+            <div class="label">What will be the car registration type and whose name will it be registered in?</div>
+                <div class="content">
+                    <p>The car will be registered as a premium commercial vehicle (black plate) with an All India permit and can be driven anywhere within India without any concerns. It will be registered in the name of Revv (PrimeMover Mobility Technologies Pvt. Ltd.) or its supply partners.</p>
+                </div>
+            
+        </div>
+        <div class="contentBx">
+            <div class="label">Will the car have any branding on it?</div>
+                <div class="content">
+                    <p>If you subscribe to a new car, it will be delivered without any branding. If you subscribe to an Unboxed car, you can opt to have the Revv branding removed for a nominal one time charge of Rs. 2000</p>
+                </div>
+            
+        </div>
+        <div class="contentBx">
+            <div class="label">What documents do I need?</div>
+                <div class="content">
+                    <p>If you subscribe to a new car, it will be delivered without any branding. If you subscribe to an Unboxed car, you can opt to have the Revv branding removed for a nominal one time charge of Rs. 2000</p>
+                </div>
+            
+        </div>
+    </div>
+    </div>
+   <!-- PopUp container -->
+
+   <div id="container">
+    <!-- <button type="submit" class="btn" onclick="openPopup()">Submit</button> -->
+    <div class="popup" id="popup">
+        <img src="https://gogoacarrentals.com/wp-content/uploads/2019/02/tick.gif" alt="">
+        <h2>Thank You!</h2>
+        <p>Your Car Reserved.Thanks!</p>
+        <button type="submit" onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+
+<script>
+    let accordion = document.getElementsByClassName('contentBx');
+
+    for( i = 0 ; i<  accordion.length ; i++){
+        accordion[i].addEventListener("click", function(){
+            this.classList.toggle('active')})
+    }
+
+
+
+</script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+<script>
+    let popup_login = document.getElementById("popup");
+
+let openPopup = ()=>{
+    popup_login.classList.add("open-popup");
+    document.querySelector("body").style.backgroundColor ="grey";
+    document.querySelector("#alto_car").style.visibility= "hidden";
+}
+let closePopup = ()=>{
+    popup_login.classList.remove("open-popup");
+ 
+    window.location.href ="../formhtml/subs-form.html"
+}
+
+// window.addEventListener("scroll",()=>{
+//     let scl = window.scrollY;
+//     console.log(scl)
+//     if(scl > 200){
+//         document.querySelector("#cart_desc").classList.remove("sticky")
+//     }else{
+//         document.querySelector("#cart_desc").classList.add("sticky")
+//     }
+// })
+
+
+
+
+//////////////////////// navbar scrippt  /////////////////
+
+
+// navbar and login&signup
+
+
+let popup = document.querySelector("#register-form1")
+        let popup1 = document.querySelector('#register-form')
+        function openpopup() {
+            popup.classList.add("openpopup")
+        }
+        function openpopup1() {
+            popup1.classList.add("openpopup")
+        }
+    
+        async function login() {
+            let login_data = {
+                password: document.getElementById("login_password").value,
+                username: document.getElementById("login_username").value,
+            }
+            console.log(login_data)
+    
+            login_data = JSON.stringify(login_data)
+    
+            let login_link = 'https://masai-api-mocker.herokuapp.com/auth/login'
+    
+            let response = await fetch(login_link, {
+                method: "POST",
+    
+                body: login_data,
+    
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+    
+            let data = await response.json()
+            console.log(data)
+            window.location.href="index.html"
+    
+    
+        }
+    
+    
+        async function Register() {
+    
+            let p = document.createElement("p")
+            p.innerText = "SIGN UP"
+            p.style.marginBottom = 20
+            let name = document.createElement("input")
+            let mobile = document.createElement("input")
+            let description = document.createElement("input")
+            let password = document.createElement("input")
+            password.setAttribute('id', 'password')
+            password.placeholder = "Password"
+            let username = document.createElement("input")
+            username.setAttribute('id', 'username')
+            username.placeholder = 'Username'
+            let email = document.createElement("input")
+            email.setAttribute('id', 'email')
+            email.placeholder = "Email ID"
+            let img1 = document.createElement("img")
+            img1.src = 'https://www.revv.co.in/imgs/google-login.png'
+            let img2 = document.createElement("img")
+            img2.src = 'https://www.revv.co.in/imgs/facebook-icon.png'
+            let button = document.createElement("button")
+            button.innerText = "Proceed"
+            button.setAttribute("id", "submit")
+            button.addEventListener("click", signup)
+            let form = document.createElement("form")
+            form.append(p, img1, img2, email, username, password, button)
+    
+    
+            document.querySelector("#register-form1").innerHTML = ""
+            document.querySelector("#register-form1").append(form, button)
+        }
+    
+        async function signup() {
+            popup.classList.remove("openpopup")
+    
+            let signup_data = {
+                name: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                username: document.getElementById('username').value,
+                mobile: document.getElementById('username').value,
+                description: document.getElementById('username').value
+            }
+            signup_data = JSON.stringify(signup_data)
+    
+            let signup_api_link = 'https://masai-api-mocker.herokuapp.com/auth/register'
+    
+    
+            let response = await fetch(signup_api_link, {
+                method: "POST",
+    
+                body: signup_data,
+    
+                headers:
+                {
+                    'Content-Type': 'application/json'
+                }
+            })
+            let data = await response.json()
+            console.log(data)
+            window.location.reload()
+    
+        }
+// navbar and login&signup
+</script>

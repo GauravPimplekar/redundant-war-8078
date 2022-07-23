@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Form</title>
+    <script src="https://kit.fontawesome.com/74f19205b6.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+
+    <link rel="stylesheet" href="./satyajit_Style/select_city.css">
+   <link rel="stylesheet" href="./satyajit_Style/rental.css">
+    <link rel="stylesheet" href="./satyajit_Style/subs_slide.css">
+    <link rel="stylesheet" href="./satyajit_Style/senitized.css">
+    <link rel="stylesheet" href="./satyajit_Style/car_section.css">
+    <link rel="stylesheet" href="./satyajit_Style/faq.css">
+    <link rel="stylesheet" href="./satyajit_Style/footer.css">
+    <link rel="stylesheet" href="./satyajit_Style/background-silder.css">
+    <style>
+        
+#navbar {
+    width: 100%;
+    margin: auto;
+    margin-top: -6px;
+    display: flex;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    z-index: 97;
+}
+
+#navbar>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 140px;
+
+}
+
+#subscribe a {
+
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+a:hover {
+    color: teal;
+}
+
+#logo {
+    width: 15%;
+    margin-left: 10px;
+}
+
+#subscribe {
+    width: 85%;
+}
+
+#subscribe>button {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#subscribe>p {
+    cursor: pointer;
+}
+
+#authentication {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn1 {
+    margin-left: 10px;
+    border: 0;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn1:hover {
+    color: teal;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* login&signup */
+
+.register-form1{
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding:  30px 0px;
+    padding-right: 140px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 80;
+}
+.register-form{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 550%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    /* padding: 0 30px 30px; */
+    color: #333;
+    /* visibility: hidden; */
+    transition: transform 0.4s, top 0.4s;
+}
+.openpopup{
+    visibility: visible;
+    top: 500%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.register-form1{
+    border: 1px solid;
+}
+.register-form1 > form > img{
+    width: 180px;
+    margin-bottom: 15px;
+}
+form > input{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    border: 0;
+    border-bottom: 1px solid teal;
+}
+h4{
+    padding: 10px;
+}
+#submit{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    width: 130px;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 130px;
+}
+#submit1{
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    width: 130px;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* margin-left: 130px; */
+}
+form > p{
+    margin-top: 20px;
+}
+#pass{
+    color: teal;
+    font-size: small;
+}
+#option{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#option > p{
+    font-size: small;
+}
+#option > button{
+    border: 0;
+    color: teal;
+    background-color: white;
+}
+/* login&signup */
+
+/* ........navbar ended............. */
+    </style>
+</head>
+
+<body>
+     <!--  --------------------navbar start from here -------------->
+     <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
+        </div>
+
+        <div id="subscribe">
+            <button><a href="hyundai.html"><span>Hyndai</span>Subscription</a></button>
+            <button><a href="mahindra.html"><span>Mahindra</span>Subscription</a></button>
+            <p>FAQs</p>
+            <div id="authentication">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="">
+                <div class="container1">
+                    <button type="submit" class="btn1" onclick="openpopup()">Login or Signup</button>
+                    <div class="register-form1" id="register-form1">
+                        <form action="" id="form">
+                            <p>LOG IN</p>
+                            <input type="text" id="login_username" placeholder="Username">
+                            <input type="text" id="login_password" placeholder="Password">
+                            <p id="pass">Send a new password to my email ID</p>
+                            <button onclick="login()" type="button" id="submit1">Login</button>
+
+                            <div id="option">
+                                <p>Don't have a account yet?</p><button onclick="Register()" id="signup">Sign
+                                    Up</button>
+                            </div>
+
+
+                            <img src="https://www.revv.co.in/imgs/google-login.png" alt="">
+
+                            <img src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--------------------- nav bar end here---------------- -->
+    <div id="top">
+        <div id="sb_form">
+        <div id="sb_form_btn">
+
+            <div id="subs_btn">
+                <a href="./rental-form.html">
+                    <h3>Rental</h3>
+                    <p style="color:white">For hours & day</p>
+                </a>
+               
+            </div>
+
+            <div id="rental_btn">
+                <a href="./subs-form.html">
+                    <h3>Subscription</h3>
+                    <p>For months & years</p>
+                    <div class="dimond">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="sb_form_body">
+            <img style="width:230px ; margin-top: 20px;" src="https://www.revv.co.in/assets/subscription/brandLogo/subscription_web.png" alt="">
+            <p>Car Rental in <span id="input_place"> Bengaluru</span></p>
+        </div>
+        <div id="sb_form_input">
+
+            <!-- SELECT YOUR CITY BUTTON -->
+            <div class="select-menu">
+                <div class="select-btn" style="border: 1px solid grey; border-radius:14px; padding: 14px 0px; width: 95%;margin: auto;">
+                    <span class="sBtn-text" style="padding: 20px; font-size: 24px;"><span style="margin-left:-10px ; font-size:18px;margin-right:10px" class="iconify" data-icon="akar-icons:location"></span>Bengaluru</span>
+                    <i class="bx bx-chevron-down"></i>
+                </div>
+                <ul class="options">
+                    <li class="option">
+                        <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>Bengaluru</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Chennai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Hyderabad</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Mumbai</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Delhi</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Pune</span>
+                    </li>
+                    <li class="option">
+                       <span class="option-text" ><span style="font-size:18px;margin-right:10px;" class="iconify" data-icon="akar-icons:location"></span>
+                        <span class="option-text">Kolkata</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- END OF SELECT YOUR CITY BUTTON -->
+            <div id="start_end_time" style="margin-top: 50px; ">
+                <div id="start" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;padding:0px; height: 100px; display: grid;border-radius: 10px ;margin: 10px; border: none;">
+                    <a href="#" style="color:grey">
+                        <h4 style="margin:0 ; padding:6px;border-radius:10px;background-image: linear-gradient(-90deg,#1ca7a3, #1c82aa 
+                        ); color:white;box-shadow: rgba(0, 0, 0,1) 0px 1px 9px;" >Search <br> by the Month </h4>
+                        <i style="position: absolute; font-size:36px;margin-top:-60px; margin-left:180px; color:
+                        white" class="bx bx-chevron-right"></i>
+                        <p style="line-height:1px ; font-size: 16px; margin-left:6px;">For 1,2,3 & 6 months</p>
+                    </a>
+                   
+                </div>
+                <div id="end" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;padding:0px; height: 100px; display: grid;border-radius: 10px ;margin: 10px; border: none;">
+                    <a href="#" style="color:grey"> 
+                        <h4 style="margin:0 ; padding:6px;border-radius:10px;background-image: linear-gradient(-90deg,#1ca7a3, #1c82aa 
+                        ); color:white; box-shadow: rgba(0, 0, 0,1) 1px 1px 7px;"">Search <br> by the Year </h4>
+                        <i style="position: absolute; font-size:36px;margin-top:-60px; margin-left:180px; color:
+                        white" class="bx bx-chevron-right"></i>
+                        <p style="line-height:1px ; font-size: 14px; margin-left:6px;">For 1 & 2 years</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="sub">
+            <img
+              id="slider"
+              src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp"
+              alt=""
+            />
+          </div>
+    </div>
+    
+
+
+    <!-- ----------------------FORM END HERE ---------------------------->
+
+    <section class="product">
+        <div class="container-fluid">
+            <div class="slider-wrap">
+                <h3 style="font-weight:800;  font-size: 24px;">Subscription Benefits</h3>
+                <div class="slider-main" id="slider-main">
+                   
+                    <div class="item">
+                        <div class="text">
+                           <img src="https://www.revv.co.in/assets/subscription/home/webp/web/doorstepDelivery_Web.webp" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/commitment_Web.webp" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/deposit_Web.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/flexibility_Web.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text" style="margin-top:-10px ;">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/safeSanitized_Web.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/zeroDownPayment_Web.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="text">
+                            <img src="https://www.revv.co.in/assets/subscription/home/webp/web/insuranceMaintenance_Web.webp" alt="">
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="btn-area">
+                    <button type="button" class="slider-btn" onclick="prev()">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button type="button" class="slider-btn" onclick="next()">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ----------------------Subscription Benifit End Here --------->
+
+<div id="video-area">
+    <div id="desc">
+        <h3>What is Revv Subscription?</h3>
+        <p>It’s a different way of owning a car, without any down payment or car loan. Your monthly fee covers insurance, service & maintenance. Plus, there are no long term commitments - you can return, extend or buy-out the car when you want. And all this at a price cheaper than an EMI!</p>
+        <button>Know More</button>
+    </div>
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KccvwVosjcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<!-- -----------------Senitized section ---------->
+
+<section class="product">
+    <div class="container-fluid">
+        <div class="slider-wrap" style="height: 220px; margin-top:30px ;">
+            <h2 style="font-weight:800; margin-top:-0px;">Sanitized & safe cars</h2>
+            <div class="slider-main" id="slider_second-main">
+               
+                <div class="item_2" style="height:140px; width:260px
+                ">
+                    <div class="text" >
+                        
+                       <img style="height:100% ;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/safeCars/banner-sanitised02.webp" alt="">
+                    </div>
+                    
+                </div>
+                <div class="item_2" style="height:140px; width:260px">
+                    <div class="text">
+                        
+                        <img style="height:100% ;"  src="https://www.revv.co.in/assets/RentalImages/HomeScreen/safeCars/banner-sanitised03.webp" alt="">
+                    </div>
+                </div>
+                <div class="item_2" style="height:140px; width:260px">
+                    <div class="text" style="margin-top:-10px ;">
+                        
+                        <img style="height:100% ;margin-top: 10px;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/safeCars/mask-group125.webp" alt="">
+                    </div>
+                </div>
+                <div class="item_2" style="height:140px; width:260px">
+                    <div class="text">
+                        
+                        <img style="height:100% ;" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/safeCars/banner-sanitised01.webp" alt="">
+                    </div>
+                </div>
+                <div class="item_2" style="height:140px; width:260px">
+                    <div class="text">
+                        
+                        <img style="height:100% ;"  src="https://www.revv.co.in/assets/RentalImages/HomeScreen/safeCars/banner-sanitised03.webp" alt="">
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="btn-area" style="margin-top:-6px ;">
+                <button type="button" class="slider-btn" onclick="prev_2()">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button type="button" class="slider-btn" onclick="next_2()">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -----------------CAR SECTION ---------->
+<div id="car_colection">
+    <h3>Revv Cars At affordable prices</h3>
+    <div id="car_type">
+        <button onclick="hatch()">Hatchbacks</button>
+        <button onclick="sedan()">Sedan</button>
+        <button onclick="suv()">SUVs</button>
+    </div>
+    <div id="car_display">
+        <div class="cart">
+            <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Maruti_suzuki_alto_k10.jpg"
+                alt="Maruti Alto K10">
+            <h4>Maruti Alto K10 </h4>
+            <div>
+                <img class="p" src="https://www.revv.co.in/grapheneImages/CompareNPay/petrol.svg" alt="">
+                <p>Petrol</p>
+                <img src="https://www.revv.co.in/grapheneImages/CompareNPay/manual-icon.svg" alt="">
+                <p>Manual</p>
+            </div>
+            <h6>₹ 13,399/month <span style="color:grey;"> ₹ 14,999 </span> </h6>
+        </div>
+        <div class="cart">
+            <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Maruti_Alto800.jpg"
+                alt="Maruti Alto K10">
+            <h4>Maruti Alto 800 </h4>
+            <div>
+                <img class="p" src="https://www.revv.co.in/grapheneImages/CompareNPay/petrol.svg" alt="">
+                <p>Petrol</p>
+                <img src="https://www.revv.co.in/grapheneImages/CompareNPay/manual-icon.svg" alt="">
+                <p>Manual</p>
+            </div>
+            <h6>₹ 14,399/month<span style="color:grey;"> ₹ 16,099</span></h6>
+        </div>
+        <div class="cart">
+            <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg"
+                alt="Maruti Alto K10">
+            <h4>Hyundai Santro</h4>
+            <div>
+                <img class="p" src="https://www.revv.co.in/grapheneImages/CompareNPay/petrol.svg" alt="">
+                <p>Petrol</p>
+                <img src="https://www.revv.co.in/grapheneImages/CompareNPay/manual-icon.svg" alt="">
+                <p>Manual</p>
+            </div>
+            <h6>₹ 17,399/month <span style="color:grey;"> ₹ 18,099 </span></h6>
+        </div>
+        <div>
+          
+            <i class="fa-solid fa-arrow-right fa-4x" style="color:skyblue ; margin-top:100%; margin-left:26%"></i>
+        
+        </div>
+    </div>
+</div>
+
+
+<!-- FAQ SECTION -->
+<!-- *****Faq started****** -->
+<div id="faqMain">
+    <div class="heading">
+      <h2>FAQs</h2>
+      <a href="">View all</a>
+    </div>
+    <div class="none">
+      <div class="card-wrapper">
+        <div class="card-collapse">
+          <div class="ccheader">
+            <h4>Is there a speed limit?</h4>
+          </div>
+          <p>
+            Revv allows up to 125 km/hr. However it is 80 km/hr in a few cities
+            where some cars might be equipped with speed governors as per
+            government directives. Revv strictly advises to follow local speed
+            limits.
+          </p>
+          <hr style="margin-left: -30px; margin-right: -30px; height: 0.5px; border: none; background-color: rgb(241, 244, 248);">
+        </div>
+        <div class="card-collapse">
+          <div class="ccheader">
+            <h4>Can I extend/ cancel/ modify?</h4>
+          </div>
+          <p>
+            Yes, extensions are possible subject to availability & charges.
+            Cancellations & modifications will attract nominal charges as per
+            our policy.
+          </p>
+          <hr style="margin-left: -30px; margin-right: -30px; height: 0.5px; border: none; background-color: rgb(241, 244, 248);">
+        </div>
+        <div class="card-collapse">
+          <div class="ccheader">
+            <h4>Booking criteria & documents?</h4>
+          </div>
+          <p>
+            Min. 21 years old, have valid original government ID (Aadhar,
+            Passport, or PAN only) and a valid driving licence for “Light Motor
+            Vehicles”, which is min. 1 year old at the time of starting the
+            trip.
+          </p>
+          <hr style="margin-left: -30px; margin-right: -30px; height: 0.5px; border: none; background-color: rgb(241, 244, 248);">
+        </div>
+        <div class="card-collapse">
+          <div class="ccheader">
+            <h4>Are there any restricted areas?</h4>
+          </div>
+          <p>
+            Leh/Ladhakh, Spiti Valley & Kaza/Nako regions are not permitted to
+            take Revv cars. Customer will be fully liable for any damages
+            incurred to the car in that region.
+          </p>
+          <hr style="margin-left: -30px; margin-right: -30px; height: 0.5px; border: none; background-color: rgb(241, 244, 248);">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ..............Faq Ended............... -->
+<!-- ****our journer Started******* -->
+<div id="our-journey">
+    <div class="pheader">
+        <h2>Our journey so far</h2>
+    </div>
+    <div class="pcards">
+        <div class="row">
+            <div class="col">
+                <div class="pcard-wrapper">
+                    <div class="card-journey">
+                        <div class="cicon">
+                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/revvers.png"alt="">
+                        </div>
+                        <h3>1 Mn</h3>
+                        <p>Happy Revvers</p>
+                    </div>
+                </div>
+            </div>
+        
+                <div class="col">
+                    <div class="pcard-wrapper">
+                        <div class="card-journey">
+                            <div class="cicon">
+                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/cities.png"alt="">
+                            </div>
+                            <h3>22+ cities</h3>
+                            <p>Across India</p>
+                        </div>
+                    </div>
+                </div>
+               
+        
+            <div class="col">
+                <div class="pcard-wrapper">
+                    <div class="card-journey">
+                        <div class="cicon">
+                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/travel.png"alt="">
+                        </div>
+                        <h3>50 Mn +</h3>
+                        <p>Kms travelled</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col">
+                    <div class="pcard-wrapper">
+                        <div class="card-journey">
+                            <div class="cicon">
+                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/review.png"alt="">
+                            </div>
+                            <h3>4.8 / 5</h3>
+                            <p>20K+ reviewers</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<!-- .............our journey Ended.................. -->
+
+
+<!-- ****our investors started****** -->
+  <div id="our-investors">
+    <div class="pheader">
+        <h2>Our investors</h2>
+    </div>
+    <div class="pcards">
+        <div class="row">
+            <div class="col">
+                <div class="pcard-wrapper">
+                    <div class="card-journey">
+                        <div class="icicon">
+                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp"alt="">
+                        </div>
+                        <p>Hyundai Motor Company</p>
+                    </div>
+                </div>
+            </div>
+        
+                <div class="col">
+                    <div class="pcard-wrapper">
+                        <div class="card-journey">
+                            <div class="icicon">
+                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp"alt="">
+                            </div>
+                            <p>Edelweiss Financial Services</p>
+                        </div>
+                    </div>
+                </div>
+               
+        
+            <div class="col">
+                <div class="pcard-wrapper">
+                    <div class="card-journey">
+                        <div class="icicon">
+                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp"alt="">
+                        </div>
+                        <p>Dream Incubator</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col">
+                    <div class="pcard-wrapper">
+                        <div class="card-journey">
+                            <div class="icicon">
+                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp"alt="">
+                            </div>
+                            <p>Beenext</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- .............our investors Ended............. -->
+
+  <!-- specialities cities part started -->
+
+  <div id="footer-1">
+    <div class="cardbg">
+        <div class="cities-wrapper">
+            <div class="Cpageheader">
+                <h2 class="cityh">Serviceable cities</h2>
+            </div>
+            <div class="main">
+                <div class="row-c">
+                    <div class="maintable">
+                        <ul class="serviceable cities">
+                            <li> <a href="">Car Rental in Bangalore</a> </li>
+                            <li> <a href="">Car Rental in Hyderabad</a> </li>
+                            <li> <a href="">Car Rental in Mumbai</a> </li>
+                            <li> <a href="">Car Rental in Delhi-NCR</a> </li>
+                            <li> <a href="">Car Rental in Chennai</a> </li>
+                            <li> <a href="">Car Rental in Pune</a> </li>
+                            <li> <a href="">Car Rental in Kolkata</a> </li>
+                            <li> <a href="">Car Rental in Ahmedabad</a> </li>
+                        </ul>
+                    </div>
+                    <div class="maintable">
+                        <ul class="serviceable cities">
+                            <li> <a href="">Car Rental in Bhubaneswar</a> </li>
+                            <li> <a href="">Car Rental in Chandigarh</a> </li>
+                            <li> <a href="">Car Rental in Coimbatore</a> </li>
+                            <li> <a href="">Car Rental in Jaipur</a> </li>
+                            <li> <a href="">Car Rental in Kochi</a> </li>
+                            <li> <a href="">Car Rental in Mangalore</a> </li>
+                            <li> <a href="">Car Rental in Mysore</a> </li>
+                            <li> <a href="">Car Rental in Nagpur</a> </li>
+                        </ul>
+                    </div>
+                    <div class="maintable">
+                        <ul class="serviceable cities">
+                            <li> <a href="">Car Rental in Surat</a> </li>
+                            <li> <a href="">Car Rental in Tirupati</a> </li>
+                            <li> <a href="">Car Rental in Trivandrum</a> </li>
+                            <li> <a href="">Car Rental in Vadodara</a> </li>
+                            <li> <a href="">Car Rental in Vijayawada</a> </li>
+                            <li> <a href="">Car Rental in Vizag</a> </li>
+                            <li> <a href="">Car Rental in Kolkata</a> </li>
+                            <li> <a href="">Car Rental in Ahmedabad</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+  <!-- specialities cities part ended -->
+
+  <!-- /* footer-2/download social app box started */ -->
+  <div id="footer-2">
+    <div class="pcardbg">
+        <div class="contact-us">
+            <div class="row-S">
+                <div class="maincol">
+                    <div class="revvlogo">
+                        <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/revv-logo.png" alt="">
+                    </div>
+                    <p class="content-s" style="font-size:12px;">
+                        "©"
+                        "2022"
+                        " Primemover Mobility Technologies Pvt Ltd. All rights reserved"
+
+                    </p>
+                </div>
+                <div class="maincol2">
+                    <div class="sub">
+                        <div class="deskcentre">
+                            <div class="otherpages">
+                                <li> <a href=""> Home</a> </li>
+                                <li> <a href=""> FAQs</a> </li>
+                                <li> <a href=""> Policy</a> </li>
+                                <li> <a href=""> Blog</a> </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maincol3">
+                    <div class="sub">
+                        <div class="deskcentre">
+                            <div class="contactus">
+                                <h6 class="s">Social</h6>
+                                    <ul class="links">
+                                        <li> <a href="https://www.facebook.com/revvindia/" target="_blank">
+                                            <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/facebook.png" alt="">
+                                           
+                                        </a> </li>
+                                        <li> <a href="https://twitter.com/revv_india" target="_blank">
+                                            <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/twitter.png" alt="">
+                                            
+                                        </a> </li>
+                                        <li> <a href="https://www.instagram.com/revv_india" target="_blank">
+                                            <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/instagram.png" alt="">
+                                           
+                                        </a> </li>
+                                        <li> <a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" target="_blank">
+                                            <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/youtube.png" alt="">
+                                            
+                                        </a> </li>
+                                        <li> <a href="https://www.linkedin.com/company/revv-self-drive-car" target="_blank">
+                                            <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/linkedIn.png" alt="">
+                                           
+                                        </a> </li>
+                                    </ul>
+                                    <h6 class="s2">Download the Revv App! </h6> 
+                                    <div class="downloadalinks">
+                                        <a href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400">
+                                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp" alt="">
+                                             Download
+                                            <b>App Store</b>
+                                        </a>
+                                        <a href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400">
+                                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.png" alt="">
+                                            Download
+                                            <b>Google Play</b>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- /* footer-2/download social app box ended */ -->
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
+<!-- <script src="./select_city.js"></script> -->
+<script src="./satyajit_Script/rental.js"></script>
+<script src="./satyajit_Script/subs_slide.js"></script>
+<script>
+    // **top section & slide bar started****
+
+let img1 =
+  "https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp";
+let img2 =
+  "https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_2_FG.webp";
+let img3 =
+  "https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_3_FG.webp";
+
+let image = [img1, img2, img3];
+
+let i = 0;
+
+let slideshow = document.getElementById("sub");
+
+let id = setInterval(() => {
+  if (i === image.length) {
+    i = 0;
+  }
+  let img = document.createElement("img");
+  img.style = "width:50%;";
+  img.src = image[i];
+  slideshow.innerHTML = null;
+  slideshow.append(img);
+  i++;
+}, 2000);
+
+
+// ..........top section & slide bar Ended..........
+
+
+
+//////////////////////// navbar scrippt  /////////////////
+
+
+// navbar and login&signup
+
+
+let popup = document.querySelector("#register-form1")
+        let popup1 = document.querySelector('#register-form')
+        function openpopup() {
+            popup.classList.add("openpopup")
+        }
+        function openpopup1() {
+            popup1.classList.add("openpopup")
+        }
+    
+        async function login() {
+            let login_data = {
+                password: document.getElementById("login_password").value,
+                username: document.getElementById("login_username").value,
+            }
+            console.log(login_data)
+    
+            login_data = JSON.stringify(login_data)
+    
+            let login_link = 'https://masai-api-mocker.herokuapp.com/auth/login'
+    
+            let response = await fetch(login_link, {
+                method: "POST",
+    
+                body: login_data,
+    
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+    
+            let data = await response.json()
+            console.log(data)
+            window.location.href="index.html"
+    
+    
+        }
+    
+    
+        async function Register() {
+    
+            let p = document.createElement("p")
+            p.innerText = "SIGN UP"
+            p.style.marginBottom = 20
+            let name = document.createElement("input")
+            let mobile = document.createElement("input")
+            let description = document.createElement("input")
+            let password = document.createElement("input")
+            password.setAttribute('id', 'password')
+            password.placeholder = "Password"
+            let username = document.createElement("input")
+            username.setAttribute('id', 'username')
+            username.placeholder = 'Username'
+            let email = document.createElement("input")
+            email.setAttribute('id', 'email')
+            email.placeholder = "Email ID"
+            let img1 = document.createElement("img")
+            img1.src = 'https://www.revv.co.in/imgs/google-login.png'
+            let img2 = document.createElement("img")
+            img2.src = 'https://www.revv.co.in/imgs/facebook-icon.png'
+            let button = document.createElement("button")
+            button.innerText = "Proceed"
+            button.setAttribute("id", "submit")
+            button.addEventListener("click", signup)
+            let form = document.createElement("form")
+            form.append(p, img1, img2, email, username, password, button)
+    
+    
+            document.querySelector("#register-form1").innerHTML = ""
+            document.querySelector("#register-form1").append(form, button)
+        }
+    
+        async function signup() {
+            popup.classList.remove("openpopup")
+    
+            let signup_data = {
+                name: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                username: document.getElementById('username').value,
+                mobile: document.getElementById('username').value,
+                description: document.getElementById('username').value
+            }
+            signup_data = JSON.stringify(signup_data)
+    
+            let signup_api_link = 'https://masai-api-mocker.herokuapp.com/auth/register'
+    
+    
+            let response = await fetch(signup_api_link, {
+                method: "POST",
+    
+                body: signup_data,
+    
+                headers:
+                {
+                    'Content-Type': 'application/json'
+                }
+            })
+            let data = await response.json()
+            console.log(data)
+            window.location.reload()
+    
+        }
+// navbar and login&signup
+</script>

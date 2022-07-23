@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------FORM TOP SECTION------------- */
+#sb_form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 35%;
+    display: grid;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-left: 46px;
+    margin-top: 20px;
+    background-color: #ffffff;
+
+
+}
+
+#sb_form_btn {
+    margin-top: 20px;
+    background-color: #49a6ba;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 95%;
+    z-index: 30;
+    margin: auto;
+}
+
+#rental_btn {
+
+    margin: 10px 10px;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 20px;
+    line-height: 1px;
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
+   
+
+}
+#rental_btn a{
+     color: black;
+}
+
+#subs_btn {
+    margin: 7px 10px;
+    text-align: center;
+    line-height: 1px;
+    border-radius: 20px;
+}
+
+#subs_btn a {
+    color: white;
+    font-weight: 600;
+}
+
+
+/*---------- FORM BODY---------- */
+
+#sb_form_body {
+    text-align: center;
+    /* border: 2px solid pink; */
+    margin-top: 18px;
+    font-size: 23px;
+    line-height: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+#sb_form_body img{
+    margin-top: 10px;
+    width: 130px;
+}
+
+/* #sb_form_body #input_place input {
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+#sb_form_input {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: -20px;
+    margin: auto;
+
+}
+
+#sb_form_input #sb_form_place {
+    border: 1px solid grey;
+    border-bottom: none;
+    width: 100%;
+    text-align: end;
+    border-radius: 10px 10px 0px 0px;
+    padding: 4px 0px;
+}
+
+/* #sb_form_input #sb_form_place #place_list{
+    border: 10px solid black;
+    margin:100px;
+} */
+
+#sb_form_input #start_end_time {
+    display: flex;
+    /* border: 1px solid blue; */
+
+}
+
+#sb_form_input #start_end_time #start,
+#sb_form_input #start_end_time #end {
+    border: 1px solid grey;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 0px 0px 0px 10px;
+    padding-left: 3px;
+    font-size: 20px;
+    color: rgb(93, 93, 93);
+  
+}
+
+#sb_form_input #start_end_time #end {
+    border-radius: 0px 0px 10px 0px;
+}
+
+/* -----------FORM END----------- */
+
+#sb_form_submit_btn {
+    margin: 10px 0px;
+    width: 95%;
+}
+
+#sb_form_submit_btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 24px;
+    background-color: #a4d3dc;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#start input {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px;
+    margin-top: -6px;
+    margin-left: 90px;
+}
+
+#end input {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px;
+    margin-top: -6px;
+    margin-left: 90px;
+
+}
+
+  /* dimond shape on rental button */
+.dimond {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-top: -13px;
+    margin-left: 100px;
+    z-index: -1;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px; */
+}
+
+
+input[type=datetime-local]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+
+}
+
+input[type=datetime-local]:focus::-webkit-datetime-edit {
+    color: black !important;
+
+}
+
+
+/* -------------video section-------- */
+
+#video-area{
+    width: 90%;
+
+    display: flex;
+    padding:10px 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 14px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#video-area #desc{
+   width: 50%;
+   font-weight: 100;
+   line-height: 30px;
+   height: 300px;
+
+}
+#video-area #desc p{
+    color: grey;
+}
+#video-area #desc button{
+    background:none;
+    padding:10px 20px ;
+    color:#49a6ba;
+    font-size:16px ;
+    border: 2px solid #49a6ba ;
+    cursor: pointer;
+
+}
+#video{
+    width: 46%;
+}
+#video iframe{
+    height: 300px;
+    width: 100%;
+    border-radius: 16px;
+}
