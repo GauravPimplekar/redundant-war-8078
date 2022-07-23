@@ -1,0 +1,89 @@
+/* footer-2/download social app box started */
+#footer-2{
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%);
+    background-color: white;
+    border-radius: 10px;
+}
+.row-S{
+    display: flex;
+    justify-content: space-around;
+}
+.deskcentre{
+    display: flex;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 5px;
+}
+.links .icon{
+  width: 20px;
+  height: 25px;
+  cursor:default;
+}
+.links .icon:hover{
+    background-color:teal;
+    padding: 10px;
+    border-radius: 50%;
+}
+.revvlogo img{
+    width: 96px;
+}
+.otherpages a{
+    text-decoration: none;
+}
+.otherpages a:hover{
+   color: black;
+}
+.otherpages li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.s{
+    font-size: 16px;
+    color: #84848B;
+}
+.s2{
+    font-size: 16px;
+    color: #84848B;
+    margin-bottom: -2px;
+}
+.contactus{
+    margin-top: -28px;
+}
+.downloadalinks{
+    display: flex;
+    flex-direction: column;
+}
+.downloadalinks img{
+    width: 15px;
+}
+.downloadalinks a{
+    border:1px solid rgb(240, 227, 227);
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0px;
+    cursor:default;
+}
+.downloadalinks a:hover{
+    color: #49A6BA;
+}
+b{
+    color: black;
+    font-weight: bold;
+}
+b:hover{
+    color: #49A6BA;
+}
+  .links li{
+    list-style: none;
+  }
+ 
+
+/* footer-2/download social app box ended */
