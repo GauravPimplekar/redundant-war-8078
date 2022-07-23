@@ -5,56 +5,465 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>revvNavbar</title>
-    <link rel="stylesheet" href="index.css">
+
+
+       <style>
+        
+#navbarAll{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255,255,255);
+    justify-content:space-between;
+    /* padding-right: 20%; */
+    padding-left: 7%;
+    position:fixed;
+    left: 0%;
+   top: 0%;
+}
+#navbtt{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    margin-right: 20px;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    justify-content:flex-end;
+    position:fixed;
+    top: 10px;
+    right: 31%;
+    /* text-decoration: none;   */
+    /* text-decoration:dotted; */
+}
+
+#navbtt>button{
+height:40px;
+width: 180px;
+cursor: pointer;
+/* font-size:100%; */
+/* font-style: italic; */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+background-color: rgb(255,255,255);
+border:  1px solid rgb(197, 213, 227) ;
+font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    /* text-align: left; */
+   
+    padding: 10px 0;
+}
+#navbtt>button>a:hover{
+    color:cyan;
+}
+
+
+#navsubcrip>button>a:hover{
+    color:cyan;
+}
+
+
+#navbtt>button>a{
+    text-decoration:dotted;
+    color: #000;
+}
+
+#navsubcrip>button>a{
+    text-decoration:dotted;
+    color: #000;
+}
+
+#navsubcrip>button{
+    background-color: white;
+    border:  1px solid rgb(197, 213, 227) ;
+    cursor: pointer;
+}
+
+#navsubcrip{
+    display: flex;
+    /* gap: 20px; */
+    width: 60%;
+    /* margin-right: 20px; */
+  
+    justify-content:space-around;
+    position:fixed;
+    top: 10px;
+    right: 25%;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+
+
+#log{
+    display: flex;
+    gap: 10px;
+    padding-right: 15%;
+    cursor: pointer;
+    
+    /* width: 75%; */
+}
+#log>button:hover{
+    color:rgb(13, 218, 218);
+    cursor: pointer;
+
+}
+#log>button{
+    background-color: rgb(255,255,255);
+border:  1px solid rgb(255,255,255);
+
+}
+#log>img{
+    width: 30px;
+}
+/* -----------------------------bott------------------------------------ */
+
+
+
+
+#navh2p{
+    
+    display: flex;
+    position: fixed;
+    left: 17%;
+    top: 0px;
+    width: 56%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    
+    #hydiimg{
+        width: 100%;
+    }
+    
+    #todiv{
+        
+        display: flex;
+        height: 600px;
+      width: 100%;
+      align-items: center;
+      justify-content:center;
+      gap: 8%;
+       background-image: url("https://www.autotrader.com/wp-content/uploads/2021/07/2022-nissan-venue-front-right-side.jpg");
+        /* padding-top: -50%; */
+    }
+    
+    
+    #todivleft{
+        width: 50%;
+        /* border: 1px  solid red; */
+        background-color: rgb(255,255,255);
+        /* position: absolute; */
+        height: 80%;
+        margin-top: 80px;
+        margin-left: 30px;
+        /* display: grid; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    #todivright{
+        background-color: rgb(255,255,255);
+        width: 100%;
+        height: 30%;
+        /* margin-bottom: 100px; */
+    }
+    #yearexplor{
+        display: flex;
+    }
+    #rigt2div{
+        display: grid;
+        /* justify-content: space-between; */
+        width:30% ;
+        height: 400px;
+        /* border: 1px  solid red; */
+    }
+    #lefth2pp{
+        text-align: center;
+    }
+    #lefth2pp>div{
+        /* border: 1px solid red; */
+          margin-bottom: 60px;
+      height: 50px;
+    }
+    #lefth2pp>div+p{
+        font-size: 20px;
+        /* color: blue; */
+    }
+    
+    #citylocation{
+        /* margin-left: 7%; */
+        /* border: 1px solid red; */
+        height: 80%;
+        width: 80%;
+       display: flex;
+       text-decoration: underline;
+       /* align-items: center; */
+       justify-content:space-between;
+       cursor: pointer;
+       margin: auto;
+    }
+    #citylocation>img:nth-child(1){
+        width: 30px;
+    }
+    #citylocation>img+input{
+        height: 30px;
+        width: 90%;
+        border-top: rgb(255,255,255);
+        border-left: rgb(255,255,255);
+        border-right: rgb(255,255,255);
+        background-color: rgb(255,255,255);
+    }
+    
+    #city>p{
+        padding-left: 15%;
+        color:gray ;
+    }
+    #dateduration{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        /* gap: 10%; */
+        /* border: solid 1px red; */
+        margin-top: 10%;
+    }
+    #datediv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        cursor: pointer;
+       
+        /* border:1px solid red; */
+    
+    }
+    #datediv>img:nth-child(1){
+        width: 20px;
+        height: 40px;
+       
+      }
+    #datediv>input:nth-child(2){
+        width: 100%;
+        height: 95%;
+       /* border: solid 1px red; */
+       font-size: 20px;
+       border-top: rgb(255,255,255);
+       border-left: rgb(255,255,255);
+       border-right: rgb(255,255,255);
+       background-color: rgb(255,255,255);
+       
+    }
+    #datediv>img:nth-child(3){
+        width: 20px;
+    }
+    #duration{
+    /* display: grid; */
+    /* border: solid 1px red; */
+    width: 40%;
+    height: 60%;
+    }
+    #duration>p{
+        color: gray;
+    }
+    #duration>input{
+       width: 95%;
+       font-size: 20px;
+       border-top: rgb(255,255,255);
+       border-left: rgb(255,255,255);
+       border-right: rgb(255,255,255);
+       background-color: rgb(255,255,255);
+    
+    
+     }
+     #searchbtt{
+        display: flex;
+        justify-content: space-around;
+       height: 40px;
+        /* border: 1px solid red; */
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: #1c80ab;
+        border-radius: 5px;
+        align-items: center;
+        cursor: pointer;
+    
+     }
+     #searchbtt>div>a{
+        font-size: large;
+        color: white;
+        text-decoration: none;
+     }
+     #todivright>p{
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+       font-size: large;
+       padding-left: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+    
+    #yearexplor{
+      display: flex;  
+      gap: 10px;
+      /* border: 1px solid red; */
+      padding-left: 10px;
+    }
+    #yearexplor>h5{
+    color: #66c6cd;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    }
+    #footh2{
+      padding-top: 100px;
+        width: 90%;
+        margin: auto;
+        /* border: solid 1px ; */
+    }
+    #footh2>div>p{
+        text-align:justify;
+    }
+    #footlogo{
+      /* margin-top: 50px; */
+        display: flex;
+    
+        justify-content: space-around;
+        background-color: #3d4250;
+    }
+    #footright{
+        color: white;
+    }
+    #footleft{
+        color: white;
+    }
+    
+    #footcitys{
+        display: flex;
+        justify-content: space-around;
+        background-color:#2a2b36 ;
+    }
+    #footcitys>div>h3{
+        color: white;
+    }
+    #footcitys>div>p{
+    color: gray;
+    }
+    
+    #brandlogo{
+        display: flex ;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+    #brandlogo>img{
+        width: 130px;
+    }
+    #journyimg{
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+    }
+    #journydiv>h1{
+    margin-left: 8%;
+    margin-top: 50px;
+    }
+    #journydiv{
+        background-color: rgb(253,253,253);
+        margin-top: 30px;
+       
+    
+    }
+    </style>
 </head>
-<body>
-    <div id="navbarAll"></div>    
+<body id="body">
+    <div id="navbarAll">
+        <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="" srcset="">
+           
+        <div id="log">
+             <p>FAQs</p>
+             <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="" srcset="">
+        <button>Login or Signup</button>
+       
+    </div>
+    </div>  
+   
     
     <div id="navh2p">
           <h2>Hyundai Subscription</h2>
           <p>How it works</p>
     </div>
 
-     <!-- <div id="navbar">
-       <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="" srcset="">
-              <button>Hyundai Subscription</button>
-        <button>Mahindra Subscription</button>  
-         <p>FAQs</p>
-        <div><img src="" alt="" srcset="">
-            <button>Login or Signup</button>
-        </div>  
-      </div> -->
-<div id="todiv" >
-    <!-- <div background="https://www.autotrader.com/wp-content/uploads/2021/07/2022-nissan-venue-front-right-side.jpg"></div> -->
-     <!-- <img  id="hydiimg" src="https://www.autotrader.com/wp-content/uploads/2021/07/2022-nissan-venue-front-right-side.jpg" alt="" srcset=""> -->
 
-    <div id="todivleft">    
+   
+    <div id="nameofcity"> uhsd"KJnh'lksnd'lksndLKn'LSKDN'lkjsn</div>
+
+   
+<div id="todiv" >
+      <div id="todivleft">    
+      <div id="lefth2pp">
       <div>
         <h2>Hyundai Subscription</h2>
         <p>Powered BY revv</p>
+      </div>
         <p>Hyundai Car Subscription</p>
       </div>
-      <div>
+      <div id="city">
         <p>CITY</p>
-        <div>
-          <div>
+        <div id="locadate">
+          <div id="citylocation">
             <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/locationIcon.png" alt="" srcset="">
-            <input type="text"  id="cityinput" value="">
-            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchDropdown.svg" alt="">
-         </div>
-         <div>
-            <div>
+            <!-- <input type="text"  id="cityinput" value="" > -->
+            <!-- <div id="cityinput"> -->
+              <select name="" id="cityinput">
+              <option value="">Bangalore</option>
+              <option value="">Hyderabad</option>
+              <option value="">Mumbai</option>
+              <option value="">Delhi-NCR</option>
+              <option value="">Chennai</option>
+              <option value="">Kochi</option>
+              <option value="">Kolkata</option>
+              <option value="">Pune</option>
+              <option value="">Ahmedabad</option>
+              <option value="">Trivadrum</option>
+              <option value="">Vadodara</option>
+              <option value="">Vizag</option>
+              <option value="">Vijayawada</option>
+              <option value="">Nagpur</option>
+            </select>
+            <!-- </div> -->
+            <!-- <input type="text" iconstyle="[object Object]" labelstyle="[object Object]" readonly="" id="cityinput" value="" style="appearance: textfield; padding: 0px; position: relative; width: 100%; border: none; outline: none; background-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0.87); cursor: inherit; font-style: inherit; font-variant: inherit; font-weight: 600; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: Poppins; opacity: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 100%; margin-top: -3px;"> -->
+
+            <!-- <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchDropdown.svg" alt=""> -->
+        </div>
+         <div id="dateduration">
+            <div id="datediv">
              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/calenderIcon.png" alt="">
-             <input type="date" name="" id="">
+             <input type="datetime-local" name="" id="dateinput"  value="" placeholder="Start Date" ></input>
+            
             </div>
-            <div>
+            <div id="duration">
                 <p>DURATION</p>
-                <input type="text" value="1,2,3 or 6 Mon">
+                <input type="submit" value="1,2,3 or 6 Months"/>
             </div>
          </div>
+
         </div>
       </div>
+
+
+      <div id="searchbtt">
+        <div> <a href="subcribe.html">Search </a> </div>
+        <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/open-xplore.svg" alt="">
+      </div>
+
+
     </div>
+    
     <div id="rigt2div">
     <div id="todivright">
         <p>Looking for Hyundai Subscription</p>
@@ -64,19 +473,338 @@
         <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/open-xplore.svg" alt="">
      </div>
     </div>
-    <div></div>
+   
     </div>
 </div>
 
-<!-- <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" srcset="">  
-      <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" srcset="">  
-      <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" srcset="">   -->
-     
-    </body>
+<div>
+  <h1 id="woksh1">How it Works</h1>
+  <div id="workimg">
+    <div>
+    <div>
+      <img src="https://media-server.clubmed.com/image/jpeg/1024/auto/crop/center/70/https%3A%2F%2Fns.clubmed.com%2Fesap%2F2020%2F252%2FRWD%2FPages%2FPeaceOfMind%2Fimg_cancel1.jpg" alt="">
+    </div>
+    <div>
+ 
+      <h2>Book & Pay</h2>
+      <p>Pick your favourite car, time and place</p>
+    </div>
+  </div>
+    
+  <div>
+    <div>
+      <img src="data:image/png;base64,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" alt="">
+    </div>
 
+    <div>
+  
+      <h1>Receive</h1>
+      <p>We will deliver the car to your doorstep  </p>
+    </div>
+    
+  </div>
+
+  <div>
+    <div>
+      <img src="data:image/png;base64,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" alt="">
+    </div>
+    
+<div>
+  
+  <h1>Drive</h1>
+  <p>Enjoy your Revv self drive  </p>
+</div>
+
+  </div>
+
+  <div>
+    <div>
+      <img src="data:image/png;base64,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" alt="">
+    </div>
+    <div>
+
+      <h1>Return  </h1>
+      <p>Get the car back to your preferred return location, and we will take it from there</p>
+    </div>
+  </div>
+    </div>
+
+
+
+  </div>
+
+
+
+<div id="faq_sec">
+  <h3>Frequently asked questions</h3>
+   <div class="accordion">
+  <div class="contentBx">
+      <div class="label">How will the payment cycle work?</div>
+          <div class="content">
+              <p>Payment cycle will be on monthly advance basis. The billing cycle will begin on the mutually agreed date of delivery, and you will need to pay the booking amount (first month subscription fee plus refundable deposit) before handover of the car. This date will also become the due date for subsequent months. Every month, you will receive an invoice that needs to be paid by the due date.</p>
+          </div>
+      
+  </div>
+  <div class="contentBx">
+      <div class="label">What will be the car registration type and whose name will it be registered in?</div>
+          <div class="content">
+              <p>The car will be registered as a premium commercial vehicle (black plate) with an All India permit and can be driven anywhere within India without any concerns. It will be registered in the name of Revv (PrimeMover Mobility Technologies Pvt. Ltd.) or its supply partners.</p>
+          </div>
+      
+  </div>
+  <div class="contentBx">
+      <div class="label">Will the car have any branding on it?</div>
+          <div class="content">
+              <p>If you subscribe to a new car, it will be delivered without any branding. If you subscribe to an Unboxed car, you can opt to have the Revv branding removed for a nominal one time charge of Rs. 2000</p>
+          </div>
+      
+  </div>
+  <div class="contentBx">
+      <div class="label">What documents do I need?</div>
+          <div class="content">
+              <p>If you subscribe to a new car, it will be delivered without any branding. If you subscribe to an Unboxed car, you can opt to have the Revv branding removed for a nominal one time charge of Rs. 2000</p>
+          </div>
+      
+  </div>
+</div>
+</div>
+
+<div id="brandlogo">
+  <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp" alt="">
+  <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp" alt="">
+  <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp" alt="">
+  <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png" alt="">
+  <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png" alt="">
+  <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png" alt="">
+</div>
+
+
+<div id="journydiv">
+  <h1>Our Journey so far</h1>
+  <div id="journyimg">
+  <div>
+    <img src="https://www.revv.co.in/grapheneImages/newopen/ic-happy-cus.svg" alt="" srcset="">
+    <h1>2500+</h1>
+    <p>Happy Subscribers</p>
+  </div>
+  <div>
+    <img src="https://www.revv.co.in/grapheneImages/newopen/ic-across-india.svg" alt="" srcset="">
+    <h1>22+ Cities</h1>
+    <p>Across India</p>
+  </div>
+  <div>
+    <img src="https://www.revv.co.in/grapheneImages/newopen/ic-subscription.svg" alt="">
+    <h1>50Mn+</h1>
+    <p>Kms Travelled</p>
+  </div>
+  <div>
+    <img src="https://www.revv.co.in/grapheneImages/newopen/ic-customer-rating.svg" alt="" srcset="">
+    <h1>4.8 / 5</h1>
+    <p>20k+ reviewers</p>
+  </div>
+</div>
+</div>
+
+
+<div id="footcitys">
+  <div>
+    <h3>Top 7 Hyundai Car Subscription Cities</h3>
+    <p>Hyundai Car Subscription in Bangalore</p>
+    <p>  Hyundai Car Subscription in Hyderabad</p> 
+    <p>  Hyundai Car Subscription in Mumbai   </p> 
+     <p> Hyundai Car Subscription in Delhi-NCR</p> 
+    <p>  Hyundai Car Subscription in Chennai   </p> 
+     <p>  Hyundai Car Subscription in Pune   </p>
+     <p> Hyundai Car Subscription in Kolkata   </p> 
+  </div>
+  <div>
+    <h3>Top 7 Mahindra Car Subscription Cities</h3>
+    <p>Mahindra Car Subscription in Bangalore</p>
+     <p>  Mahindra Car Subscription in Hyderabad   </p>
+    <p>   Mahindra Car Subscription in Mumbai    </p>
+    <p>   Mahindra Car Subscription in Delhi-NCR   </p>
+     <p>  Mahindra Car Subscription in Pune   </p>
+     <p> Mahindra Car Subscription in Kolkata   </p> 
+    <p>  Mahindra Car Subscription in Ahmedabad   </p> 
+  </div>
+  <div>
+    <h3>Top 7 Revv Car Subscription Cities </h3>
+    <p>Revv Car Subscription in Bangalore</p>
+     <p>Revv Car Subscription in Hyderabad </p>  
+     <p>  Revv Car Subscription in Mumbai  </p>
+     <p>  Revv Car Subscription in Delhi-NCR  </p>
+     <p>  Revv Car Subscription in Chennai   </p>
+     <p> Revv Car Subscription in Pune   </p> 
+     <p>  Revv Car Subscription in Kolkata  </p>
+  </div>
+</div>
+
+
+
+<div id="footlogo">
+  <div id="footleft">
+    <img src="https://www.revv.co.in/imgs/revvLogo.png" alt="">
+    <div>
+      <img src="https://www.facebook.com/revvindia/" alt="">
+      <img src="https://twitter.com/revv_india" alt="">
+    </div>
+    <p>© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+  </div>
+ 
+  <div id="footright"> 
+    <h1>Have Questions?</h1>
+    <h1>+91-8929655141</h1>
+    <h4>24/7 Customer Support</h4>
+    <h4>care@revv.co.in</h4>
+  </div>
+</div>
+
+<div id="footh2">
+<div>
+<h2>Revv Hyundai subscription – Safe, sanitized and comfortable cars for everyday travel</h2>
+<p>Taking a Revv Hyundai subscription in these times is the smartest decision you can take for your family so that you can avoid the hassles and unsafe environment of the public transport. While the Hyundai cars are well known for their reliability and comfort with a mix of cutting-edge features, the Revv subscription of Hyundai cars provide the customers with access to the most popular Hyundai models. The cars are thoroughly sanitized both inside and outside before the delivery, to eliminate any chance of contamination from any surface of the car. The Revv team members would also be wearing full Personal Protective Equipment (PPE) while delivering the sanitized Hyundai cars for subscription by Revv to your doorstep.</p>
+</div>
+
+<div>
+  <h2>Hyundai subscription by Revv - Makes sense financially</h2>
+  <p>With the self-drive Hyundai car subscription, you can enjoy your favorite Hyundai car without having to commit your money into buying it. Hyundai subscription by Revv comes at a reasonable pricing model, so that the amount you pay as the rental is lesser than the down-payment, EMIs, Insurance, Road Tax and Maintenance amount taken together. All these facilities are, however, fully inclusive in the Hyundai subscription by Revv. While you save yourself from paying for each of the services separately, you can also change to a different car make-model later if you get bored of it and decide to go for a different car. While the minimum Hyundai subscription India period is 12 months, you can reduce this period of subscription and move out of the contract anytime by paying a pre closure penalty amount. There is also a buy-out option in case you fall in love with the car and decide to buy it.</p>
+
+</div>
+
+<div>
+  <h2>Taking Revv Hyundai subscription is as easy as 123</h2>
+  <p>The Revv Hyundai cars subscription in Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Pune and in 18 more cities in India can be taken up in just a few steps. First you need to choose the city that you need the Hyundai cars subscription in, and then specify the start date and period for which you want to take the subscription. You will be shown a list of cars available and from these you can choose the one that you want. The safe and sanitized Hyundai cars subscription will get initiated, and the car will be delivered to your doorstep.</p>
+</div>
+
+</div>
+
+
+
+<style>
+  #woksh1{
+    margin-left: 10%;
+    margin-top: 50px;
+  }
+  #workimg>div>div>img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+  }
+  #workimg{
+    display: flex;
+    /* gap: auto; */
+    width: 80%;
+    height: 250px;
+    /* border: solid 1px red; */
+    justify-content: space-between;
+    margin: auto;
+    
+  }
+ #workimg>div{
+  /* border: solid 1px rgb(42, 3, 3); */
+  /* display: flex; */
+  width: 24%;
+
+ }
+
+  #workimg>div>div:nth-child(1){
+    border-radius: 50%;
+    /* border: solid 1px red; */
+    width: 30%;
+    height: 70px;
+    margin: auto;
+    
+    /* justify-content: center; */
+
+    
+    border: solid 7px rgb(173, 172, 172) ;
+  }
+  #workimg>div>div:nth-child(2){
+    text-align: center;
+  }
+  #cityinput{
+    width: 90%;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    text-decoration: none;
+   
+    /* height: 500px; */
+  }
+  #cityinput>option{
+    /* color: red; */
+    height: 500px;
+    text-decoration: none;
+    display: grid;
+    gap: 5px;
+  }
+  #faq_sec{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* position: absolute;
+    right: 74px;
+   margin-top: 20px; */
+    padding:100px;
+    border-radius: 14px;
+    /* display: grid;
+    align-items: center; */
+}
+
+
+
+.accordion{
+    width: 600px;
+}
+
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 30px  0 10px ;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px 40px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    /* top: 50%; */
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+.accordion .contentBx .content{
+   position: relative;
+   padding: 0px;
+   color: grey;
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s;
+   /* overflow-y: auto; */
+   font-size: 13px;
+
+}
+.accordion .contentBx.active .content{
+    height: 106px;
+    padding: 10px;
+    }
+
+</style>
+
+</body>
   
 </html>
 
-<script src="hyundai.js" type="module">
-   
+<script>
+      let accordion = document.getElementsByClassName('contentBx');
+
+for( i = 0 ; i<  accordion.length ; i++){
+    accordion[i].addEventListener("click", function(){
+        this.classList.toggle('active')})
+}
+
 </script>
