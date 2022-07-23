@@ -804,7 +804,8 @@ b:hover{
     transform: translate(-50%,-50%) scale(0.1);
     text-align: center;
     padding:  30px 0px;
-    padding-right: 140px;
+    padding-right: 100px;
+    padding-left: 80px;
     color: #333;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
@@ -855,7 +856,7 @@ h4{
     border: 0;
     border-radius: 5px;
     margin-top: 30px;
-    margin-left: 130px;
+    margin-left: -10px;
 }
 #submit1{
     padding: 10px;
