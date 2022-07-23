@@ -1,0 +1,413 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/log_in.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #navbar {
+            width: 102%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: auto;
+            display: flex;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            
+        }
+
+        #navbar>#logo , #navbar > #subscribe{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        a {
+
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: black;
+        }
+
+        a:hover {
+            color: teal;
+        }
+
+        #logo {
+            width: 15%;
+            margin-left: 10px;
+        }
+
+        #subscribe {
+            width: 85%;
+        }
+
+        #subscribe>button {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border: 0;
+            font-size: large;
+        }
+
+        #subscribe>p {
+            cursor: pointer;
+            margin-right: -230px;
+        }
+
+        #authentication {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            margin-left: 10px;
+            border: 0;
+            background-color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #call{
+            border: 1px solid teal;
+            padding: 5px;
+            font-size: small;
+            color: teal;
+        }
+        .btn1:hover {
+            color: teal;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="">
+        </div>
+        <hr>
+        <div id="subscribe">
+            
+            <button><a href=""><span>Hundai</span>Subscription</a></button>
+            <p id="call">Call us</p>
+            <p>FAQs</p>
+            <div id="authentication">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="">
+                <div class="container1">
+                    <button type="submit" class="btn1" onclick="openpopup()">Login or Signup</button>
+                    <div class="register-form1" id="register-form1">
+                        <form action="" id="form">
+                            <p>LOG IN</p>
+                            <input type="text" id="login_username" placeholder="Username">
+                            <input type="text" id="login_password" placeholder="Password">
+                            <p id="pass">Send a new password to my email ID</p>
+                            <button onclick="login()" type="button" id="submit">Login</button>
+
+                            <div id="option">
+                                <p>Don't have a account yet?</p><button onclick="Register()" id="signup">Sign
+                                    Up</button>
+                            </div>
+
+
+                            <img src="https://www.revv.co.in/imgs/google-login.png" alt="">
+
+                            <img src="https://www.revv.co.in/imgs/facebook-icon.png" alt="">
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <p id="mdl">Home > Hyndai Subscription > Unboxed Cars</p>
+
+    <div id="footer">
+        <div id="sidebar">
+            <h5>Filter By</h5>
+            <p>city</p>
+            <select onchange="SearchByCity()" name="" id="option1">
+                <option value="">Search by City</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi-NCR">Delhi-NCR</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Pune">Pune</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Mangalore">Mangalore</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Vizag">Vizag</option>
+            </select>
+
+            <h5>Search</h5>
+            <div id="search">
+                <i class="fa fa-search" style="font-size:24px"></i><input type="search"  placeholder="Search by car model" id="search">
+            </div>
+            
+
+            <h6>MIN</h6>
+            <select onchange="minPrice()" name="" id="">
+                
+                <option value="20000">₹20,000</option>
+                <option value="25000">₹25,000</option>
+                <option value="30000">₹30,000</option>
+            </select>
+            
+            <h6>MAX</h6>
+            <select onchange="maxPrice()" name="" id="">
+                
+                <option value="35000">₹35,000</option>
+                <option value="40000">₹40,000</option>
+                <option value="45000">₹45,000</option>
+            </select>
+            <h5>Fuel</h5>
+            <div id="petrol"><input type="Checkbox">Petrol</div>
+            <div id="diesel"><input type="Checkbox">Diesel</div>
+            <h5>Transmission</h5>
+            <div id="auto"><input type="Checkbox">Automatic</div>
+            <div id="manual"><input type="Checkbox">Manual</div>
+        </div>
+        <div id="carsdetail">
+            <div id="top">
+                <div >
+                    <button >Brand new car <br> <p>Ordered especially for you</p></button>
+                    <button id="unbox">Unboxed-car <br> <p>As good as new</p></button>
+                </div>
+                <div>
+                    <select name="" id="sort" onchange="sortfunc()">
+                        <option value="">Sort By</option>
+                        <option value="lh">Price: Low to High</option>
+                        <option value="hl">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div id="container">
+            
+            </div>
+        </div>
+        
+
+    </div>
+
+
+    <!-- /* footer-2/download social app box started */ -->
+    <div id="footer-2">
+        <div class="pcardbg">
+            <div class="contact-us">
+                <div class="row-S">
+                    <div class="maincol">
+                        <div class="revvlogo">
+                            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/revv-logo.png" alt="">
+                        </div>
+                        <p class="content-s" style="font-size:12px;">
+                            "©"
+                            "2022"
+                            " Primemover Mobility Technologies Pvt Ltd. All rights reserved"
+
+                        </p>
+                    </div>
+                    <div class="maincol2">
+                        <div class="sub">
+                            <div class="deskcentre">
+                                <div class="otherpages">
+                                    <li> <a href=""> Home</a> </li>
+                                    <li> <a href=""> FAQs</a> </li>
+                                    <li> <a href=""> Policy</a> </li>
+                                    <li> <a href=""> Blog</a> </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maincol3">
+                        <div class="sub">
+                            <div class="deskcentre">
+                                <div class="contactus">
+                                    <h6 class="s">Social</h6>
+                                        <ul class="links">
+                                            <li> <a href="https://www.facebook.com/revvindia/" target="_blank">
+                                                <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/facebook.png" alt="">
+                                               
+                                            </a> </li>
+                                            <li> <a href="https://twitter.com/revv_india" target="_blank">
+                                                <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/twitter.png" alt="">
+                                                
+                                            </a> </li>
+                                            <li> <a href="https://www.instagram.com/revv_india" target="_blank">
+                                                <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/instagram.png" alt="">
+                                               
+                                            </a> </li>
+                                            <li> <a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" target="_blank">
+                                                <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/youtube.png" alt="">
+                                                
+                                            </a> </li>
+                                            <li> <a href="https://www.linkedin.com/company/revv-self-drive-car" target="_blank">
+                                                <img class="icon" src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/social/linkedIn.png" alt="">
+                                               
+                                            </a> </li>
+                                        </ul>
+                                        <h6 class="s2">Download the Revv App! </h6> 
+                                        <div class="downloadalinks">
+                                            <a href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400">
+                                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/appstore_apple.webp" alt="">
+                                                 Download
+                                                <b>App Store</b>
+                                            </a>
+                                            <a href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400">
+                                                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/playstore_google.png" alt="">
+                                                Download
+                                                <b>Google Play</b>
+                                            </a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- /* footer-2/download social app box ended */ -->
+    
+</body>
+</html>
+
+<script>
+    let popup = document.querySelector("#register-form1")
+    let popup1 = document.querySelector('#register-form')
+    function openpopup() {
+        popup.classList.add("openpopup")
+    }
+    function openpopup1() {
+        popup1.classList.add("openpopup")
+    }
+
+    async function login() {
+        let login_data = {
+            password: document.getElementById("login_password").value,
+            username: document.getElementById("login_username").value,
+        }
+        console.log(login_data)
+
+        login_data = JSON.stringify(login_data)
+
+        let login_link = 'https://masai-api-mocker.herokuapp.com/auth/login'
+
+        let response = await fetch(login_link, {
+            method: "POST",
+
+            body: login_data,
+
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        let data = await response.json()
+        console.log(data)
+
+
+    }
+
+
+    async function Register() {
+
+        let p = document.createElement("p")
+        p.innerText = "SIGN UP"
+        p.style.marginBottom = 20
+        let name = document.createElement("input")
+        let mobile = document.createElement("input")
+        let description = document.createElement("input")
+        let password = document.createElement("input")
+        password.setAttribute('id', 'password')
+        password.placeholder = "Password"
+        let username = document.createElement("input")
+        username.setAttribute('id', 'username')
+        username.placeholder = 'Username'
+        let email = document.createElement("input")
+        email.setAttribute('id', 'email')
+        email.placeholder = "Email ID"
+        let img1 = document.createElement("img")
+        img1.src = 'https://www.revv.co.in/imgs/google-login.png'
+        let img2 = document.createElement("img")
+        img2.src = 'https://www.revv.co.in/imgs/facebook-icon.png'
+        let button = document.createElement("button")
+        button.innerText = "Proceed"
+        button.setAttribute("id", "submit")
+        button.addEventListener("click", signup)
+        let form = document.createElement("form")
+        form.setAttribute("id",'form')
+        form.append(p, img1, img2, email, username, password, button)
+
+
+        document.querySelector("#register-form1").innerHTML = ""
+        document.querySelector("#register-form1").append(form, button)
+        // 
+        // // window.location.reload()
+    }
+
+    async function signup() {
+        popup.classList.remove("openpopup")
+
+        let signup_data = {
+            name: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            username: document.getElementById('username').value,
+            mobile: document.getElementById('username').value,
+            description: document.getElementById('username').value
+        }
+        signup_data = JSON.stringify(signup_data)
+
+        let signup_api_link = 'https://masai-api-mocker.herokuapp.com/auth/register'
+
+
+        let response = await fetch(signup_api_link, {
+            method: "POST",
+
+            body: signup_data,
+
+            headers:
+            {
+                'Content-Type': 'application/json'
+            }
+        })
+
+
+        let data = await response.json()
+        console.log(data)
+
+    }
+
+</script>
+
+<script src="./script/index.js"></script>
