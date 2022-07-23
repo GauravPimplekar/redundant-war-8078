@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revvNavbar</title>
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+
+    <style>
+        
+#navbarAll{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255,255,255);
+    justify-content:space-between;
+    /* padding-right: 20%; */
+    padding-left: 7%;
+    position:fixed;
+    left: 0%;
+   top: 0%;
+}
+#navbtt{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    margin-right: 20px;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    justify-content:flex-end;
+    position:fixed;
+    top: 10px;
+    right: 31%;
+    /* text-decoration: none;   */
+    /* text-decoration:dotted; */
+}
+
+#navbtt>button{
+height:40px;
+width: 180px;
+cursor: pointer;
+/* font-size:100%; */
+/* font-style: italic; */
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+background-color: rgb(255,255,255);
+border:  1px solid rgb(197, 213, 227) ;
+font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    /* text-align: left; */
+   
+    padding: 10px 0;
+}
+#navbtt>button>a:hover{
+    color:cyan;
+}
+
+
+#navsubcrip>button>a:hover{
+    color:cyan;
+}
+
+
+#navbtt>button>a{
+    text-decoration:dotted;
+    color: #000;
+}
+
+#navsubcrip>button>a{
+    text-decoration:dotted;
+    color: #000;
+}
+
+#navsubcrip>button{
+    background-color: white;
+    border:  1px solid rgb(197, 213, 227) ;
+    cursor: pointer;
+}
+
+#navsubcrip{
+    display: flex;
+    /* gap: 20px; */
+    width: 60%;
+    /* margin-right: 20px; */
+  
+    justify-content:space-around;
+    position:fixed;
+    top: 10px;
+    right: 25%;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+
+
+#log{
+    display: flex;
+    gap: 10px;
+    padding-right: 15%;
+    cursor: pointer;
+    
+    /* width: 75%; */
+}
+#log>button:hover{
+    color:rgb(13, 218, 218);
+    cursor: pointer;
+
+}
+#log>button{
+    background-color: rgb(255,255,255);
+border:  1px solid rgb(255,255,255);
+
+}
+#log>img{
+    width: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="navbarAll">
+        <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="" srcset="">
+           
+        <div id="log">
+             <p>FAQs</p>
+             <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="" srcset="">
+        <button>Login or Signup</button>
+       
+    </div>
+    </div>  
+
+
+    <div id="navbtt">    
+    <button><a href="hyundai.html">Hyundai Subscription</a> </button>
+    <button><a href="mahindra.html">Mahindra Subscription</a></button>
+</div> 
+    
+      
+    </body>
+</html>
+
+
+<script>
+    let popup = document.querySelector("#register-form1")
+    let popup1 = document.querySelector('#register-form')
+    function openpopup() {
+        popup.classList.add("openpopup")
+    }
+    function openpopup1() {
+        popup1.classList.add("openpopup")
+    }
+
+    async function login() {
+        let login_data = {
+            password: document.getElementById("login_password").value,
+            username: document.getElementById("login_username").value,
+        }
+        console.log(login_data)
+
+        login_data = JSON.stringify(login_data)
+
+        let login_link = 'https://masai-api-mocker.herokuapp.com/auth/login'
+
+        let response = await fetch(login_link, {
+            method: "POST",
+
+            body: login_data,
+
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        let data = await response.json()
+        console.log(data)
+
+
+    }
+
+
+    async function Register() {
+
+        let p = document.createElement("p")
+        p.innerText = "SIGN UP"
+        p.style.marginBottom = 20
+        let name = document.createElement("input")
+        let mobile = document.createElement("input")
+        let description = document.createElement("input")
+        let password = document.createElement("input")
+        password.setAttribute('id', 'password')
+        password.placeholder = "Password"
+        let username = document.createElement("input")
+        username.setAttribute('id', 'username')
+        username.placeholder = 'Username'
+        let email = document.createElement("input")
+        email.setAttribute('id', 'email')
+        email.placeholder = "Email ID"
+        let img1 = document.createElement("img")
+        img1.src = 'https://www.revv.co.in/imgs/google-login.png'
+        let img2 = document.createElement("img")
+        img2.src = 'https://www.revv.co.in/imgs/facebook-icon.png'
+        let button = document.createElement("button")
+        button.innerText = "Proceed"
+        button.setAttribute("id", "submit")
+        button.addEventListener("click", signup)
+        let form = document.createElement("form")
+        form.append(p, img1, img2, email, username, password, button)
+
+
+        document.querySelector("#register-form1").innerHTML = ""
+        document.querySelector("#register-form1").append(form, button)
+        // 
+        // // window.location.reload()
+    }
+
+    async function signup() {
+        popup.classList.remove("openpopup")
+
+        let signup_data = {
+            name: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            username: document.getElementById('username').value,
+            mobile: document.getElementById('username').value,
+            description: document.getElementById('username').value
+        }
+        signup_data = JSON.stringify(signup_data)
+
+        let signup_api_link = 'https://masai-api-mocker.herokuapp.com/auth/register'
+
+
+        let response = await fetch(signup_api_link, {
+            method: "POST",
+
+            body: signup_data,
+
+            headers:
+            {
+                'Content-Type': 'application/json'
+            }
+        })
+
+
+        let data = await response.json()
+        console.log(data)
+
+    }
+
+</script>
