@@ -1,0 +1,128 @@
+#footer{
+    display: flex;
+    justify-content: space-between;
+    /* width: 900px; */
+    margin: auto;
+    width: 100%;
+}
+s{
+    font-size: 30px;
+    color: gray;
+    padding-top: 30px;
+}
+#sidebar{
+    margin-left: 20px;
+}
+#container{
+    width: 100%;
+}
+#container > div{
+    display: flex;
+    padding-left: 20px;
+    line-height: 15px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#container > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#option1{
+    border: 0;
+    font-size: 17px;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 5px;
+}
+#container > h3{
+    color: gray;
+}
+#container > div > img{
+    width: 150px;
+    height: 60px;
+    margin-top: 20px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: -20px;
+}
+#container > div > div > h3{
+    margin-bottom: -5px;
+}
+h5{
+    color: rgb(71, 70, 70);
+    
+}
+h5+p{
+    color: gray;
+}
+#carsdetail{
+    width: 70%;
+    margin-top: 10px;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#top > div > button{
+    border: 0;
+    margin-bottom: -7px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 10px;
+}
+#top > div > button:hover{
+    color: teal;
+}
+#top > div > button > p{
+    font-weight: lighter;
+    font-size: small;
+}
+#sort{
+    border: 0;
+    font-size: large;
+    width: 100px;
+}
+#carname{
+    margin-left: -150px;
+}
+#search{
+    padding: 5px;
+    border: 1px solid;
+    width: 200px;
+    display: flex;
+}
+#search > input{
+    border: 0;
+
+}
+#search > i{
+    color: teal;
+}
+select{
+    border: 0;
+    margin-top: -10px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+#top > div > #unbox{
+    color: teal;
+    border-bottom: 5px solid;
+}
+#mdl{
+    font-size: small;
+    margin-left: 20px;
+}
