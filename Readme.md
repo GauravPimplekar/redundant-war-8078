@@ -3,7 +3,7 @@
 # Clone of Revv.com
 Revv.com website was our project for Unit-3 Construct week at Masai School.
 We have made this project in 5 days.
-[<img src="https://gauravpimplekar.github.io./image/46800_050614-kgo-nordstrom-rack-website-img.jpg" width=300; height=300px;  />](https://monumental-pudding-6b6d3a.netlify.app/index.html)
+[<img src="https://th.bing.com/th/id/OIP.RBzKm3iyscAuLCV4LFsIggHaDL?pid=ImgDet&w=1109&h=475&rs=1" width=300; height=300px;  />](https://monumental-pudding-6b6d3a.netlify.app/index.html)
 
 
 # Teck  Stack
